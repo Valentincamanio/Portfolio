@@ -1,0 +1,535 @@
+
+/* aplica a todo el html */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body{
+    background-color: grey;
+}
+
+main{
+    background-image: url(../img/8586d3fb48f4ee5640f9a45b239f6a76.jpg);
+}
+
+h1{
+    font-size: 1.5em;
+    font-family:'Play', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+span{
+    display: block;
+}
+
+
+/* aca va a empezar la personalizacion del header */
+
+/*
+body header{
+    background-color:black;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    grid-area: header;
+}
+
+body header nav{
+    font-family:'Play', sans-serif;
+    text-transform: uppercase;
+}
+
+.yo{
+    color: white;
+    font-family:'Play', sans-serif;
+    text-transform: uppercase;
+}
+
+header nav ul{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+header nav ul li{
+    margin: 0.5em;
+    list-style: none;
+    color: white;
+}
+
+header nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+*/
+
+header{
+    grid-area: header;
+}
+
+.menu-color{
+    background-color: black;
+}
+
+.color-letras{
+    color: whitesmoke;
+}
+
+/* index - home */
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4% 25% 8% 13% 13% 13% 5% 18% 20% 18% 5%;
+    font-size: .7rem;
+
+    grid-template-areas: 
+    "header"
+    "main"
+    "section-dos"
+    "section-tres"
+    "section-cuatro"
+    "section-cinco"
+    "section-seis"
+    "section-siete"
+    "section-ocho"
+    "section-nueve"
+    "footer"
+    ;
+
+}
+
+.section-uno{
+    grid-area: section-uno;
+    display: none;
+}
+
+main{
+    grid-area: main;
+    border-bottom: .1rem solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section-dos{
+    grid-area: section-dos;
+    display: flex;
+    align-items: center;
+}
+
+    .section-dos h3{
+        font-size: 2rem;
+        color: black;
+        margin-left: 1rem;
+    }
+
+.section-tres{
+    grid-area: section-tres;
+    border-radius: 2rem;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    font-size: .9rem;
+}
+    .section-tres ul{
+        list-style: none;
+        border: .2rem solid black;
+        border-radius: 100%;
+        padding-left: 0;
+    }
+
+.section-cuatro{
+    grid-area: section-cuatro;
+    border-radius: 2rem;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    font-size: .9rem;
+}
+    .section-cuatro ul{
+        list-style: none;
+        border: .2rem solid black;
+        border-radius: 100%;
+        padding-left: 0;
+    }
+
+.section-cinco{
+    grid-area: section-cinco;
+    border-radius: 2rem;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    font-size: .9rem;
+}
+    .section-cinco ul{
+        list-style: none;
+        border: .2rem solid black;
+        border-radius: 100%;
+        padding-left: 0;
+    }
+
+.container-works{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.section-seis{
+    grid-area: section-seis;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 2rem;
+}
+    .section-seis h3{
+        font-size: 2rem;
+        color: black;
+    }
+
+
+.section-siete{
+    grid-area: section-siete;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: .9rem;
+    text-align: center;
+    align-items: end;
+    margin-right: 1rem;
+}
+
+.section-ocho{
+    grid-area: section-ocho;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: .9rem;
+    align-items: start;
+    margin-left: 1rem;
+}
+
+.section-nueve{
+    grid-area: section-nueve;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: .9rem;
+    text-align: center;
+    align-items: end;
+    margin-right: 1rem;
+}
+
+footer{
+    grid-area: footer;
+}
+/* aca va a empezar la personalizacion del footer */
+
+footer{
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+footer h3{
+    margin-left: 1.5em;
+    padding: .3em;
+}
+
+/* aca va a empezar la personalizacion del contact */
+
+.contenedor-contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 35% 30% 10% 9% 54.5% 10%;
+    font-size: .7rem;
+    text-align: center;
+    gap: .5rem;
+    grid-template-areas: 
+    "header"
+    "main-dos"
+    "section-diez"
+    "section-once"
+    "section-doce"
+    "section-trece"
+    "footer"
+    ;
+}
+
+.main-dos{
+    grid-area: main-dos;
+    border: .1rem solid black;
+}
+
+.section-diez{
+    grid-area: section-diez;
+    border: .1rem solid black;
+}
+
+.section-once{
+    grid-area: section-once;
+    border: .1rem solid black;
+}
+
+.section-doce{
+    grid-area: section-doce;
+    border: .1rem solid black;
+}
+
+.section-trece{
+    grid-area: section-trece;
+    border: .1rem solid black;
+}
+
+.section-catorce{
+    grid-area: section-catorce;
+    display: none;
+
+}
+
+/*  aca va a empezar el about */
+
+.contenedor-about{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 40% 50% 15%;
+    grid-template-areas: 
+    "header"
+    "main-tres"
+    "section-dieciseis"
+    "footer"
+    ;
+    font-size: .7rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+.main-tres{
+    grid-area: main-tres;
+}
+
+.section-quince{
+    grid-area: section-quince;
+    display: none;
+}
+
+.section-dieciseis{
+    grid-area: section-dieciseis;
+}
+
+/* aca va a empezar el works */
+
+.contenedor-works{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 15%);
+    grid-template-areas: 
+    "header"
+    "main-cuatro"
+    "section-diecisiete"
+    "section-dieciocho"
+    "section-diecinueve"
+    "section-veinte"
+    "footer"
+    ;
+    font-size: .7rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+.main-cuatro{
+    grid-area: main-cuatro;
+}
+
+.section-diecisiete{
+    grid-area: section-diecisiete;
+    margin-top: 1rem;
+    border: .1rem solid black;
+}
+
+.section-dieciocho{
+    grid-area: section-dieciocho;
+    border: .1rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.section-diecinueve{
+    grid-area: section-diecinueve;
+    border: .1rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.section-veinte{
+    grid-area: section-veinte;
+    border: .1rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+/* MQ PARA TABLET */
+
+
+@media screen and (min-width:600px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 32,3%);
+        grid-template-rows: 8% 25% 5% 22% 5% 30% 9%;
+        gap: 1rem;
+        text-align: center;
+    
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "section-dos section-dos section-dos"
+        "section-tres section-cuatro section-cinco"
+        "section-seis section-seis section-seis"
+        "section-siete section-ocho section-nueve"
+        "footer footer footer"
+        ;
+    
+    }
+
+    .contenedor-contact{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 8% 25% 30% 10% 66% 10%;
+        font-size: .6rem;
+        text-align: center;
+        gap: .7rem;
+        grid-template-areas: 
+        "header header"
+        "main-dos main-dos"
+        "section-diez section-once"
+        "section-catorce section-doce"
+        "section-catorce section-trece"
+        "footer footer"
+        ;
+    }
+
+        .contenedor-contact .section-catorce{
+            display: none;
+            border: .1rem solid black;
+            height: 850px;
+        }
+
+    .contenedor-about{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 20% 30% 75% 10%;
+        grid-template-areas: 
+        "header header"
+        "main-tres main-tres"
+        "section-quince section-dieciseis"
+        "footer footer"
+        ;
+        font-size: .7rem;
+        gap: 1rem;
+        text-align: center;
+    }
+
+        .section-quince {
+            display: block;
+        }
+
+
+}
+
+/* MQ para desktop */
+
+@media screen and (min-width:1024px){
+    /* contenedor index - home */
+    .contenedor{
+        grid-template-columns:repeat(3, 32.3%);
+        grid-template-rows: 6% 31% 4% 24% 4% 28% 7%;
+        gap: 1rem;
+        text-align: center;
+        grid-template-areas: 
+        "header header header"
+        "section-uno main main"
+        "section-dos section-dos section-dos"
+        "section-tres section-cuatro section-cinco"
+        "section-seis section-seis section-seis"
+        "section-siete section-ocho section-nueve"
+        "footer footer footer"
+        ;
+
+    }
+
+        .contenedor .section-uno{
+            display: block;
+        }
+
+        .contenedor img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            margin-left: .5rem;
+            border: .2rem solid black;
+        }
+
+    /* contenedor contact */
+
+    .contenedor-contact{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 8% 25% 30% 10% 66% 10%;
+        font-size: .6rem;
+        text-align: center;
+        gap: .7rem;
+        grid-template-areas: 
+        "header header"
+        "main-dos main-dos"
+        "section-diez section-once"
+        "section-catorce section-doce"
+        "section-catorce section-trece"
+        "footer footer"
+        ;
+    }
+
+        .contenedor-contact .section-catorce{
+            display: none;
+        }
+
+    /* contenedor works */
+
+    .contenedor-works{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(6, 20%);
+        grid-template-areas: 
+        "header header"
+        "main-cuatro main-cuatro"
+        "section-diecisiete section-dieciocho"
+        "section-diecisiete section-diecinueve"
+        "section-diecisiete section-veinte"
+        "footer footer"
+        ;
+        font-size: .7rem;
+        gap: 1rem;
+    }
+}

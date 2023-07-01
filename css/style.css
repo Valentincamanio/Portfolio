@@ -10,7 +10,8 @@
 /* estilos generales */
 
 body{
-    background-color: grey;
+    background-color: #272E36;
+    font-family: 'Open Sans', sans-serif;
 }
 
 main{
@@ -19,9 +20,9 @@ main{
 
 h1{
     font-size: 1.5em;
-    font-family:'Play', sans-serif;
     text-transform: uppercase;
     text-align: center;
+    color: black;
 }
 
 
@@ -29,60 +30,47 @@ span{
     display: block;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #EECA9D;
+    gap: .5rem;
+}
+
+    footer h4{
+        font-size: .8rem;
+    }
+
+    .redes a{
+       text-decoration: none;
+       color: whitesmoke;
+       padding: .3rem;
+       border-radius: 1rem;
+       background-color: #272E36;
+       border: .1rem solid black;
+    }
 
 /* aca va a empezar la personalizacion del header */
-
-/*
-body header{
-    background-color:black;
-    position: sticky;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    grid-area: header;
-}
-
-body header nav{
-    font-family:'Play', sans-serif;
-    text-transform: uppercase;
-}
-
-.yo{
-    color: white;
-    font-family:'Play', sans-serif;
-    text-transform: uppercase;
-}
-
-header nav ul{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-header nav ul li{
-    margin: 0.5em;
-    list-style: none;
-    color: white;
-}
-
-header nav ul li a{
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-
-*/
 
 header{
     grid-area: header;
 }
 
 .menu-color{
-    background-color: black;
+    background-color: #EECA9F;
 }
 
 .color-letras{
+    color: black;
+    text-align: center;
+}
+
+.color-letras:hover{
     color: whitesmoke;
+    position: relative;
+    left: 2rem;
 }
 
 /* index - home */
@@ -90,7 +78,7 @@ header{
 .contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4% 25% 8% 13% 13% 13% 5% 18% 20% 18% 5%;
+    grid-template-rows: 3.7% 15% 4% 11% 11% 11% 4% 18% 20% 16% 4%;
     font-size: .7rem;
 
     grid-template-areas: 
@@ -116,10 +104,11 @@ header{
 
 main{
     grid-area: main;
-    border-bottom: .1rem solid black;
+    border: .1rem solid #EECA9F;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1rem;
 }
 
 
@@ -127,45 +116,62 @@ main{
     grid-area: section-dos;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #EECA9D;
+    margin-bottom: 1.5rem;
 }
 
     .section-dos h3{
-        font-size: 2rem;
-        color: black;
-        margin-left: 1rem;
+        font-size: 1.8rem;
+        color: whitesmoke;
+        background-color: #272E36;
+        border-radius: 2rem;
+        padding: .7rem;
     }
 
 .section-tres{
     grid-area: section-tres;
-    border-radius: 2rem;
     text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
-    gap: .8rem;
-    font-size: .9rem;
+    font-size: .8rem;
 }
+    .section-tres h4{
+        font-size: 1rem;
+    }
     .section-tres ul{
         list-style: none;
-        border: .2rem solid black;
-        border-radius: 100%;
         padding-left: 0;
+    }
+    
+    .ul-lenguajes{
+        display: flex;
+        flex: column;
+        padding: 1rem;
+        justify-content: space-around;
+    }
+
+    .ul-lenguajes li{
+        padding: .8rem;
+        background-color: rgb(81, 78, 78);
+        border-radius: 1rem;
+        border: .1rem solid #EECA9F;
     }
 
 .section-cuatro{
     grid-area: section-cuatro;
-    border-radius: 2rem;
     text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
-    gap: .8rem;
-    font-size: .9rem;
+    font-size: .8rem;
 }
+    .section-cuatro h4{
+        font-size: 1rem;
+    }
     .section-cuatro ul{
         list-style: none;
-        border: .2rem solid black;
-        border-radius: 100%;
         padding-left: 0;
     }
 
@@ -176,13 +182,13 @@ main{
     color: white;
     display: flex;
     flex-direction: column;
-    gap: .8rem;
-    font-size: .9rem;
+    font-size: .8rem;
 }
+    .section-cinco h4{
+        font-size: 1rem;
+    }
     .section-cinco ul{
         list-style: none;
-        border: .2rem solid black;
-        border-radius: 100%;
         padding-left: 0;
     }
 
@@ -195,12 +201,16 @@ main{
     grid-area: section-seis;
     display: flex;
     align-items: center;
-    justify-content: start;
-    margin-left: 2rem;
+    justify-content: center;
+    background-color: #EECA9F;
+    margin-bottom: 1.5rem;
 }
     .section-seis h3{
-        font-size: 2rem;
-        color: black;
+        font-size: 1.8rem;
+        color: whitesmoke;
+        background-color: #272E36;
+        padding: .7rem;
+        border-radius: 2rem;
     }
 
 
@@ -239,19 +249,6 @@ main{
 footer{
     grid-area: footer;
 }
-/* aca va a empezar la personalizacion del footer */
-
-footer{
-    background-color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    color: white;
-}
-
-footer h3{
-    margin-left: 1.5em;
-    padding: .3em;
-}
 
 /* aca va a empezar la personalizacion del contact */
 
@@ -280,22 +277,28 @@ footer h3{
 
 .section-diez{
     grid-area: section-diez;
-    border: .1rem solid black;
+    color: whitesmoke;
 }
+    .section-diez .title-consultas{
+        background-color: #EECA9D;
+    }
 
 .section-once{
     grid-area: section-once;
     border: .1rem solid black;
+    color: whitesmoke;
 }
 
 .section-doce{
     grid-area: section-doce;
     border: .1rem solid black;
+    color: whitesmoke;
 }
 
 .section-trece{
     grid-area: section-trece;
     border: .1rem solid black;
+    color: whitesmoke;
 }
 
 .section-catorce{
@@ -309,7 +312,8 @@ footer h3{
 .contenedor-about{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 40% 50% 15%;
+    grid-template-rows: 12% 30% 30% 20%;
+    gap: 1rem;
     grid-template-areas: 
     "header"
     "main-tres"
@@ -317,7 +321,6 @@ footer h3{
     "footer"
     ;
     font-size: .7rem;
-    gap: 1rem;
     text-align: center;
 }
 
@@ -332,6 +335,7 @@ footer h3{
 
 .section-dieciseis{
     grid-area: section-dieciseis;
+    color: whitesmoke;
 }
 
 /* aca va a empezar el works */
@@ -339,7 +343,7 @@ footer h3{
 .contenedor-works{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 15%);
+    grid-template-rows: 10% 20% 10% 20% 20% 20% 12%;
     grid-template-areas: 
     "header"
     "main-cuatro"
@@ -350,7 +354,7 @@ footer h3{
     "footer"
     ;
     font-size: .7rem;
-    gap: 1rem;
+    gap: .5rem;
     text-align: center;
 }
 
@@ -360,35 +364,48 @@ footer h3{
 
 .section-diecisiete{
     grid-area: section-diecisiete;
-    margin-top: 1rem;
-    border: .1rem solid black;
+    background-color: #EECA9D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
 }
+    .section-diecisiete h4{
+        background-color: #272E36;
+        color: whitesmoke;
+        font-size: 1.3rem;
+        padding: .7rem;
+        border-radius: 2rem;
+    }
 
 .section-dieciocho{
     grid-area: section-dieciocho;
-    border: .1rem solid black;
+    border: .1rem solid whitesmoke;
     border-radius: 1rem;
     padding: 1rem;
     margin-left: .5rem;
     margin-right: .5rem;
+    color: whitesmoke;
 }
 
 .section-diecinueve{
     grid-area: section-diecinueve;
-    border: .1rem solid black;
+    border: .1rem solid whitesmoke;
     border-radius: 1rem;
     padding: 1rem;
     margin-left: .5rem;
     margin-right: .5rem;
+    color: whitesmoke;
 }
 
 .section-veinte{
     grid-area: section-veinte;
-    border: .1rem solid black;
+    border: .1rem solid whitesmoke;
     border-radius: 1rem;
     padding: 1rem;
     margin-left: .5rem;
     margin-right: .5rem;
+    color: whitesmoke;
 }
 
 /* MQ PARA TABLET */
@@ -440,7 +457,7 @@ footer h3{
     .contenedor-about{
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: 20% 30% 75% 10%;
+        grid-template-rows: 10% 30% 75% 10%;
         grid-template-areas: 
         "header header"
         "main-tres main-tres"

@@ -78,12 +78,14 @@ header{
 .contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3.7% 15% 4% 11% 11% 11% 4% 18% 20% 16% 4%;
+    grid-template-rows: 3.7% 15% 2% 6% 4% 11% 11% 11% 4% 18% 20% 16% 4%;
     font-size: .7rem;
 
     grid-template-areas: 
     "header"
     "main"
+    "section-dos-bis"
+    "section-dos-tris"
     "section-dos"
     "section-tres"
     "section-cuatro"
@@ -109,9 +111,21 @@ main{
     align-items: center;
     justify-content: center;
     margin: 1rem;
+    border-radius: 1rem;
 }
 
+.section-dos-bis{
+    grid-area: section-dos-bis;
+    text-align: center;
+    color: whitesmoke;
+}
 
+.section-dos-tris{
+    grid-area: section-dos-tris;
+    color: whitesmoke;
+    margin: 0rem 1rem 1rem 1rem;
+    text-align: center;
+}
 .section-dos{
     grid-area: section-dos;
     display: flex;
@@ -192,11 +206,6 @@ main{
         padding-left: 0;
     }
 
-.container-works{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
 .section-seis{
     grid-area: section-seis;
     display: flex;
@@ -223,6 +232,7 @@ main{
     text-align: center;
     align-items: end;
     margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .section-ocho{
@@ -233,6 +243,7 @@ main{
     font-size: .9rem;
     align-items: start;
     margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 .section-nueve{
@@ -414,23 +425,43 @@ footer{
 @media screen and (min-width:600px){
     .contenedor{
         display: grid;
-        grid-template-columns: repeat(3, 32,3%);
-        grid-template-rows: 8% 25% 5% 22% 5% 30% 9%;
+        grid-template-columns: repeat(2, 48.8%);
+        grid-template-rows: 3.7% 25% 3% 4% 4% 10% 8% 4% 18% 18% 7%;
         gap: 1rem;
         text-align: center;
     
         grid-template-areas: 
-        "header header header"
-        "main main main"
-        "section-dos section-dos section-dos"
-        "section-tres section-cuatro section-cinco"
-        "section-seis section-seis section-seis"
-        "section-siete section-ocho section-nueve"
-        "footer footer footer"
+        "header header"
+        "main main"
+        "section-dos-bis section-dos-bis"
+        "section-dos-tris section-dos-tris"
+        "section-dos section-dos"
+        "section-tres section-cuatro"
+        "section-cinco section-cinco"
+        "section-seis section-seis"
+        "section-siete section-ocho"
+        "section-nueve section-nueve"
+        "footer footer"
         ;
-    
     }
-
+        .section-siete{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            margin-left: 1.2rem;
+        }
+        .section-ocho{
+            display: flex;
+            flex-direction: row;
+            margin-left: 3rem;
+            margin-right: 0;
+        }
+        .section-nueve{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            margin-left: 1rem;
+        }
     .contenedor-contact{
         display: grid;
         grid-template-columns: 2fr 1fr;

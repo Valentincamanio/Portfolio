@@ -19,10 +19,10 @@ main{
 }
 
 h1{
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-transform: uppercase;
     text-align: center;
-    color: black;
+    color: whitesmoke;
 }
 
 
@@ -60,6 +60,7 @@ header{
 
 .menu-color{
     background-color: #EECA9F;
+    text-transform: uppercase;
 }
 
 .color-letras{
@@ -102,6 +103,7 @@ header{
 .section-uno{
     grid-area: section-uno;
     display: none;
+    border: 0rem;
 }
 
 main{
@@ -323,16 +325,20 @@ footer{
 .contenedor-about{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 12% 30% 30% 20%;
+    grid-template-rows: 7% 25% 4% 13% 4% 55% 7%;
     gap: 1rem;
     grid-template-areas: 
     "header"
     "main-tres"
+    "section-dieciseis-bis"
     "section-dieciseis"
+    "section-veintiuno"
+    "section-veintidos"
     "footer"
     ;
     font-size: .7rem;
     text-align: center;
+    color: whitesmoke;
 }
 
 .main-tres{
@@ -344,9 +350,21 @@ footer{
     display: none;
 }
 
+.section-dieciseis-bis{
+    grid-area: section-dieciseis-bis;
+
+}
+
 .section-dieciseis{
     grid-area: section-dieciseis;
-    color: whitesmoke;
+}
+
+.section-veintiuno{
+    grid-area: section-veintiuno;
+}
+
+.section-veintidos{
+    grid-area: section-veintidos;
 }
 
 /* aca va a empezar el works */
@@ -354,7 +372,7 @@ footer{
 .contenedor-works{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 20% 10% 20% 20% 20% 12%;
+    grid-template-rows: 6% 20% 5% 26% 26% 26% 7%;
     grid-template-areas: 
     "header"
     "main-cuatro"
@@ -365,8 +383,12 @@ footer{
     "footer"
     ;
     font-size: .7rem;
-    gap: .5rem;
+    gap: .8rem;
     text-align: center;
+}
+
+ul{
+    text-align: start;
 }
 
 .main-cuatro{
@@ -399,6 +421,12 @@ footer{
     color: whitesmoke;
 }
 
+.section-dieciocho img{
+    height: 6rem;
+    width: 10rem;
+    border: .2rem solid #EECA9D;
+}
+
 .section-diecinueve{
     grid-area: section-diecinueve;
     border: .1rem solid whitesmoke;
@@ -409,6 +437,12 @@ footer{
     color: whitesmoke;
 }
 
+    .section-diecinueve img{
+        height: 6rem;
+        width: 10rem;
+        border: .2rem solid #EECA9D;
+    }
+
 .section-veinte{
     grid-area: section-veinte;
     border: .1rem solid whitesmoke;
@@ -418,6 +452,12 @@ footer{
     margin-right: .5rem;
     color: whitesmoke;
 }
+
+    .section-veinte img{
+        height: 6rem;
+        width: 10rem;
+        border: .2rem solid #EECA9D;
+    }
 
 /* MQ PARA TABLET */
 
@@ -461,6 +501,12 @@ footer{
             flex-direction: row;
             align-items: start;
             margin-left: 1rem;
+        }
+        .ul-lenguajes{
+            display: flex;
+            flex: column;
+            justify-content: center;
+            gap: .7rem;
         }
     .contenedor-contact{
         display: grid;
@@ -510,15 +556,27 @@ footer{
 /* MQ para desktop */
 
 @media screen and (min-width:1024px){
+    /* header */
+    .color-letras{
+        display: flex;
+        text-decoration: solid;
+    }
+    .color-letras:hover{
+        color: whitesmoke;
+        border-bottom: .1rem solid whitesmoke;
+        left: 0;
+    }
     /* contenedor index - home */
     .contenedor{
-        grid-template-columns:repeat(3, 32.3%);
-        grid-template-rows: 6% 31% 4% 24% 4% 28% 7%;
+        grid-template-columns:repeat(3, 32.6%);
+        grid-template-rows: 3.7% 25% 5% 5% 4% 15% 4% 25% 5%;
         gap: 1rem;
         text-align: center;
         grid-template-areas: 
         "header header header"
         "section-uno main main"
+        "section-uno section-dos-bis section-dos-bis"
+        "section-uno section-dos-tris section-dos-tris"
         "section-dos section-dos section-dos"
         "section-tres section-cuatro section-cinco"
         "section-seis section-seis section-seis"
@@ -532,14 +590,49 @@ footer{
             display: block;
         }
 
-        .contenedor img{
+        .contenedor .section-uno img{
             height: 100%;
             width: 100%;
             object-fit: cover;
-            margin-left: .5rem;
-            border: .2rem solid black;
         }
 
+        .section-dos-bis{
+            margin-top: 1rem;
+        }
+
+        .section-tres{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .section-cuatro{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .section-cinco{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .section-siete{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .section-ocho{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .section-nueve{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     /* contenedor contact */
 
     .contenedor-contact{
@@ -567,8 +660,8 @@ footer{
 
     .contenedor-works{
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(6, 20%);
+        grid-template-columns: 20% 78.9%;
+        grid-template-rows: 7% 35% 25% 25% 25% 9%;
         grid-template-areas: 
         "header header"
         "main-cuatro main-cuatro"
@@ -580,4 +673,57 @@ footer{
         font-size: .7rem;
         gap: 1rem;
     }
+
+    ul{
+        margin: 0;
+    }
+
+    .section-diecisiete{
+        background-color:#272E36;
+    }
+
+    .section-diecisiete h4{
+        background-color: #EECA9F;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 60%;
+        text-transform: uppercase;
+    }
+
+    .section-dieciocho{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        justify-content: start;
+    }
+
+        .section-dieciocho img{
+            height: 7rem;
+            width: 12rem;
+        }
+
+    .section-diecinueve{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        justify-content: start;
+    }
+        .section-diecinueve img{
+            height: 7rem;
+            width: 12rem;
+        }
+
+    .section-veinte{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        justify-content: start;
+    }
+        .section-veinte img{
+            height: 7rem;
+            width: 12rem;
+        }
 }

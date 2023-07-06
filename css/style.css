@@ -268,7 +268,7 @@ footer{
 .contenedor-contact{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 35% 30% 10% 9% 54.5% 10%;
+    grid-template-rows: 10% 35% 15% 15% 6% 54.5% 10%;
     font-size: .7rem;
     text-align: center;
     gap: .5rem;
@@ -291,16 +291,33 @@ footer{
 .section-diez{
     grid-area: section-diez;
     color: whitesmoke;
+    font-size: .7rem;
 }
     .section-diez .title-consultas{
         background-color: #EECA9D;
     }
 
 .section-once{
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: .7rem;
     grid-area: section-once;
-    border: .1rem solid black;
-    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
 }
+    .section-once a{
+        display: flex;
+        flex-direction: row;
+        margin: .5rem;
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: #EECA9D;
+        padding: .8rem;
+        border-radius: 50%;
+    }
 
 .section-doce{
     grid-area: section-doce;
@@ -308,16 +325,54 @@ footer{
     color: whitesmoke;
 }
 
+.section-doce{
+    background-color: #EECA9D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .section-doce h3{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        background-color: #272E36;
+        border-radius: 2rem;
+        padding: .7rem;
+    }
+
 .section-trece{
     grid-area: section-trece;
     border: .1rem solid black;
     color: whitesmoke;
+    margin-top: .7rem;
 }
+
+    .section-trece legend{
+        background-color: #EECA9D;
+        display: flex;
+        justify-content: start;
+        color: black;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-datos{
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .botones-form input{
+        border-radius: 50%;
+        background-color: #EECA9D;
+        padding: .2rem;
+        border: .1rem solid black;
+    }
 
 .section-catorce{
     grid-area: section-catorce;
     display: none;
-
 }
 
 /*  aca va a empezar el about */
@@ -325,15 +380,13 @@ footer{
 .contenedor-about{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 7% 25% 4% 13% 4% 55% 7%;
+    grid-template-rows: 7% 25% 7% 70% 10%;
     gap: 1rem;
     grid-template-areas: 
     "header"
     "main-tres"
     "section-dieciseis-bis"
     "section-dieciseis"
-    "section-veintiuno"
-    "section-veintidos"
     "footer"
     ;
     font-size: .7rem;
@@ -354,10 +407,18 @@ footer{
     grid-area: section-dieciseis-bis;
 
 }
+    .section-dieciseis-bis{
+        background-color: #EECA9D;
+        border: .1rem solid black;
+    }
 
 .section-dieciseis{
     grid-area: section-dieciseis;
 }
+
+    .section-dieciseis p{
+        font-size: 1rem;
+    }
 
 .section-veintiuno{
     grid-area: section-veintiuno;
@@ -637,8 +698,8 @@ ul{
 
     .contenedor-contact{
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 8% 25% 30% 10% 66% 10%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 8% 25% 35% 6% 40% 10%;
         font-size: .6rem;
         text-align: center;
         gap: .7rem;
@@ -653,9 +714,72 @@ ul{
     }
 
         .contenedor-contact .section-catorce{
-            display: none;
+            display: block;
+            width: 10rem;
+            height: 100px;
+            margin-left: 4rem;
         }
 
+        .contenedor-contact .section-catorce img{
+            height: 350px;
+        }
+        
+        .section-once{
+            border: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            font-size: .7rem;
+        }
+        .section-once a{
+            display: flex;
+            flex-direction: column;
+            margin: .5rem;
+            text-decoration: none;
+            color: whitesmoke;
+            background-color: #EECA9D;
+            padding: .8rem;
+            border-radius: 50%;
+        }
+
+        .section-doce{
+            background-color: #EECA9D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .section-doce h3{
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                background-color: #272E36;
+                border-radius: 2rem;
+                padding: 1rem;
+            }
+        
+        .section-trece legend{
+            background-color: #EECA9D;
+            display: flex;
+            justify-content: start;
+            color: black;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-datos{
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .botones-form input{
+            border-radius: 50%;
+            background-color: #EECA9D;
+            padding: .2rem;
+            border: .1rem solid black;
+        }
     /* contenedor works */
 
     .contenedor-works{
@@ -726,4 +850,27 @@ ul{
             height: 7rem;
             width: 12rem;
         }
+
+    /* contenedor about */
+    .contenedor-about{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 7% 30% 6% 65% 8%;
+        gap: 1rem;
+        grid-template-areas: 
+        "header header"
+        "main-tres main-tres"
+        "section-quince section-dieciseis-bis"
+        "section-quince section-dieciseis"
+        "footer footer"
+        ;
+        font-size: .7rem;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .section-dieciseis-bis , .section-dieciseis{
+        margin-right: 2rem;
+    }
+
 }

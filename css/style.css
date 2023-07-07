@@ -319,6 +319,10 @@ footer{
         border-radius: 50%;
     }
 
+    .section-once i{
+        font-size: 1.5rem;
+    }
+
 .section-doce{
     grid-area: section-doce;
     border: .1rem solid black;

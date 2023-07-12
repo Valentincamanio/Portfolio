@@ -1,0 +1,23 @@
+//variables
+@import "../utilidades/variables";
+
+//variables
+@import "../utilidades/variables";
+
+/* about */
+@import "../utilidades/mixin";
+
+.contenedor-about{
+    header{
+        @include header;
+    }
+
+
+
+
+    footer{
+        grid-area: footer;
+        @include footer;
+    }
+
+}

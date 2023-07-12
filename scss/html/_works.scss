@@ -1,0 +1,22 @@
+//variables
+@import "../utilidades/variables";
+
+/* works */
+@import "../utilidades/mixin";
+
+.contenedor-works{
+    header{
+        @include header;
+    }
+
+
+
+
+
+
+
+    footer{
+        grid-area: footer;
+        @include footer;
+    }
+}

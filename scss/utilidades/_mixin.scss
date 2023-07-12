@@ -1,0 +1,67 @@
+@import "../utilidades/variables";
+
+// con parametros
+@mixin estilos-base($widht, $height, $color){
+    width: $widht;
+    height: $height;
+    color: $color;
+    background-color: tomato;
+ }
+
+
+
+// sin parametros
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin header{
+    grid-area: header;
+    .menu-color{
+        background-color: $color-secundario;
+        text-transform: uppercase;
+        div{
+            .color-letras{
+                color: black;
+                text-align: center;
+            }
+            .color-letras:hover{
+                color: whitesmoke;
+                position: relative;
+                left: 2rem;
+            }
+        }
+    }
+}
+
+@mixin works{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: .9rem;
+    text-align: center;
+}
+
+@mixin footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $color-secundario;
+    gap: .5rem;
+    div{
+        h4{
+            font-size: .8rem;  
+        }
+    }
+    .redes a{
+        text-decoration: none;
+        color: whitesmoke;
+        padding: .3rem;
+        border-radius: 1rem;
+        background-color: $color-principal;
+        border: .1rem solid black;
+     }
+}

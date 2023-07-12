@@ -1,0 +1,20 @@
+//variables
+@import "../utilidades/variables";
+
+/* services */
+@import "../utilidades/mixin";
+
+.contenedor-services{
+    header{
+        @include header;
+    }
+
+
+
+
+
+    footer{
+        grid-area: footer;
+        @include footer;
+    }
+}

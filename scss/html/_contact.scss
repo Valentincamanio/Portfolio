@@ -1,0 +1,20 @@
+//variables
+@import "../utilidades/variables";
+
+/* contact */
+@import "../utilidades/mixin";
+
+.contenedor-contact{
+    header{
+        @include header;  
+    }
+
+
+
+
+    footer{
+        grid-area: footer;
+        @include footer;
+    }
+
+}

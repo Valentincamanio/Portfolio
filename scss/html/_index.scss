@@ -1,0 +1,107 @@
+//variables
+@import "../utilidades/variables";
+
+/* home */
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.contenedor{
+    header{
+        @include header;        
+    }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3.7% 15% 2% 6% 4% 11% 11% 11% 4% 18% 20% 16% 4%;
+    font-size: .7rem;
+    grid-template-areas: 
+    "header"
+    "main"
+    "section-dos-bis"
+    "section-dos-tris"
+    "section-dos"
+    "section-tres"
+    "section-cuatro"
+    "section-cinco"
+    "section-seis"
+    "section-siete"
+    "section-ocho"
+    "section-nueve"
+    "footer"
+    ;
+    .section-uno{
+        grid-area: section-uno;
+        display: none;
+        border: 0rem;
+    }
+    main{
+        grid-area: main;
+        border: .1rem solid #EECA9F;
+        @include flex;
+        margin: 1rem;
+        border-radius: 1rem;
+        h1{
+            b{
+                span{
+                    display: block;
+                }
+            }
+        }
+    }
+    .section-dos-bis{
+        grid-area: section-dos-bis;
+        text-align: center;
+        color: whitesmoke;
+    }
+    .section-dos-tris{
+        grid-area: section-dos-tris;
+        color: whitesmoke;
+        margin: 0rem 1rem 1rem 1rem;
+        text-align: center;
+    }
+    .section-dos{
+        grid-area: section-dos;
+        @extend %titulos
+    }
+    .section-tres{
+        grid-area: section-tres;
+        @extend %services;
+    }
+    .section-cuatro{
+        grid-area: section-cuatro;
+        @extend %services;
+    }
+    .section-cinco{
+        grid-area: section-cinco;
+        @extend %services;
+    }
+    .section-seis{
+        grid-area: section-seis;
+        @extend %titulos
+    }
+    .section-siete{
+        grid-area: section-siete;
+        @include works;  
+        align-items: end;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .section-ocho{
+        grid-area: section-ocho;
+        @include works;
+        align-items: start;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .section-nueve{
+        grid-area: section-nueve;
+        @include works;
+        align-items: end;
+        margin-right: 1rem;
+    }
+    footer{
+        grid-area: footer;
+        @include footer;
+    }
+}
+
+

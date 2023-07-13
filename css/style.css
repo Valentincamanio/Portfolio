@@ -147,6 +147,87 @@ body {
       background-color: #272E36;
       border: .1rem solid black; }
 
+/* MQ PARA TABLET */
+@media screen and (min-width: 600px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 48.8%);
+    grid-template-rows: 3.7% 25% 3% 4% 4% 10% 8% 4% 18% 18% 7%;
+    gap: 1rem;
+    text-align: center;
+    grid-template-areas: "header header" "main main" "section-dos-bis section-dos-bis" "section-dos-tris section-dos-tris" "section-dos section-dos" "section-tres section-cuatro" "section-cinco section-cinco" "section-seis section-seis" "section-siete section-ocho" "section-nueve section-nueve" "footer footer"; }
+    .contenedor .section-tres ul {
+      display: flex;
+      flex: column;
+      justify-content: center;
+      gap: .7rem; }
+    .contenedor .section-cuatro ul {
+      display: flex;
+      flex: column;
+      justify-content: center;
+      gap: .7rem; }
+    .contenedor .section-cinco ul {
+      display: flex;
+      flex: column;
+      justify-content: center;
+      gap: .7rem; }
+    .contenedor .section-siete {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      margin-left: 1.2rem; }
+    .contenedor .section-ocho {
+      display: flex;
+      flex-direction: row;
+      margin-left: 3rem;
+      margin-right: 0; }
+    .contenedor .section-nueve {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      margin-left: 1rem; } }
+
+/* MQ para desktop */
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: repeat(3, 32.6%);
+    grid-template-rows: 3.7% 25% 5% 5% 4% 15% 4% 25% 5%;
+    gap: 1rem;
+    text-align: center;
+    grid-template-areas: "header header header" "section-uno main main" "section-uno section-dos-bis section-dos-bis" "section-uno section-dos-tris section-dos-tris" "section-dos section-dos section-dos" "section-tres section-cuatro section-cinco" "section-seis section-seis section-seis" "section-siete section-ocho section-nueve" "footer footer footer"; }
+    .contenedor .section-uno {
+      display: block; }
+      .contenedor .section-uno img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    .contenedor .section-dos-bis {
+      margin-top: 1rem; }
+    .contenedor .section-tres {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .contenedor .section-cuatro {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .contenedor .section-cinco {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .contenedor .section-siete {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .contenedor .section-ocho {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .contenedor .section-nueve {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
 /* about */
 .contenedor-about header {
   grid-area: header; }

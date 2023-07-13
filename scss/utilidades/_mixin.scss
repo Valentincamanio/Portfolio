@@ -65,3 +65,10 @@
         border: .1rem solid black;
      }
 }
+
+@mixin lenguajes-mq{
+    display: flex;
+    flex: column;
+    justify-content: center;
+    gap: .7rem;
+}

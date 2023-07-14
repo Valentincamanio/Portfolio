@@ -72,3 +72,10 @@
     justify-content: center;
     gap: .7rem;
 }
+
+@mixin main{
+    border: .1rem solid $color-secundario;
+    @include flex;
+    margin: 1rem;
+    border-radius: 1rem;
+}

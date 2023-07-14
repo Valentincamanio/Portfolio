@@ -3,18 +3,244 @@
 
 /* contact */
 @import "../utilidades/mixin";
+@import "../utilidades/extend";
 
 .contenedor-contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 35% 15% 15% 6% 54.5% 10%;
+    font-size: .7rem;
+    text-align: center;
+    gap: .5rem;
+    grid-template-areas: 
+    "header"
+    "main-dos"
+    "section-diez"
+    "section-once"
+    "section-doce"
+    "section-trece"
+    "footer"
+    ;
     header{
         @include header;  
     }
+    .main-dos{
+        grid-area: main-dos;
+        @include main;
+    }
+    .section-diez{
+        grid-area: section-diez;
+        color: whitesmoke;
+        font-size: .7rem;
+        .title-consultas{
+            background-color: $color-secundario;
+        }
+    }
+    .section-once{
+        grid-area: section-once;
+        @include flex;
+        border: 0;
+        gap: 2rem;
+        font-size: .7rem;
+        a{
+            display: flex;
+            flex-direction: row;
+            margin: .5rem;
+            text-decoration: none;
+            color: whitesmoke;
+            background-color: $color-secundario;
+            padding: .8rem;
+            border-radius: 50%;
+            i{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .section-doce{
+        grid-area: section-doce;
+        @include flex;
+        background-color: $color-secundario;
+        border: .1rem solid black;
+        color: whitesmoke;
+        h3{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            background-color: $color-principal;
+            border-radius: 2rem;
+            padding: .7rem;
+        }
 
-
-
-
+    }
+    .section-trece{
+        grid-area: section-trece;
+        border: .1rem solid black;
+        color: whitesmoke;
+        margin-top: .7rem;
+        form{
+            fieldset{
+                legend{
+                    background-color: $color-secundario;
+                    display: flex;
+                    justify-content: start;
+                    color: black;
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+                }
+                .form-datos{
+                    display: flex;
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+                    justify-content: center;
+                    font-size: 1rem;
+                }
+                .botones-form{
+                    display: flex;
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+                    justify-content: center;
+                    font-size: 1rem;
+                    input{
+                        border-radius: 50%;
+                        background-color: $color-secundario;
+                        padding: .2rem;
+                        border: .1rem solid black;
+                    } 
+                }
+            }    
+        }
+    }
+    .section-catorce{
+        grid-area: section-catorce;
+        display: none;
+    }
     footer{
         grid-area: footer;
         @include footer;
     }
+}
 
+/* MQ PARA TABLET */
+@media screen and (min-width:600px){
+    .contenedor-contact{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 8% 25% 30% 10% 66% 10%;
+        font-size: .6rem;
+        text-align: center;
+        gap: .7rem;
+        grid-template-areas: 
+        "header header"
+        "main-dos main-dos"
+        "section-diez section-once"
+        "section-catorce section-doce"
+        "section-catorce section-trece"
+        "footer footer"
+        ;
+        .section-catorce{
+            display: none;
+            border: .1rem solid black;
+            height: 850px;
+        }
+
+    }
+}
+
+/* MQ para desktop */
+
+@media screen and (min-width:1024px){
+    .contenedor-contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 8% 25% 35% 6% 40% 10%;
+        font-size: .6rem;
+        text-align: center;
+        gap: .7rem;
+        grid-template-areas: 
+        "header header"
+        "main-dos main-dos"
+        "section-diez section-once"
+        "section-catorce section-doce"
+        "section-catorce section-trece"
+        "footer footer"
+        ;
+        .section-catorce{
+            display: block;
+            width: 10rem;
+            height: 100px;
+            margin-left: 4rem;
+            img{
+                height: 350px;
+            }
+        }
+        .section-once{
+            @include flex;
+            border: 0;
+            gap: 2rem;
+            font-size: .7rem;
+            a{
+                background-color: $color-secundario;
+                display: flex;
+                flex-direction: column;
+                margin: .5rem;
+                text-decoration: none;
+                color: whitesmoke;
+                padding: .8rem;
+                border-radius: 50%;
+            }
+        }
+        .section-doce{
+            background-color: $color-secundario;
+            @include flex;
+            h3{
+                background-color: $color-principal;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                border-radius: 2rem;
+                padding: 1rem;
+            }
+        }
+        .section-trece{
+            form{
+                fieldset{
+                    legend{
+                        background-color: $color-secundario;
+                        display: flex;
+                        justify-content: start;
+                        color: black;
+                        gap: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                    .form-datos{
+                        display: flex;
+                        gap: 1rem;
+                        margin-bottom: 1rem;
+                        justify-content: center;
+                        font-size: 1rem;
+                    }
+                    .botones-form{
+                        input{
+                            border-radius: 50%;
+                            background-color: #EECA9D;
+                            padding: .2rem;
+                            border: .1rem solid black;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 }

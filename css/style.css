@@ -261,36 +261,234 @@ body {
     border: .1rem solid black; }
 
 /* contact */
-.contenedor-contact header {
-  grid-area: header; }
-  .contenedor-contact header .menu-color {
-    background-color: #EECA9F;
-    text-transform: uppercase; }
-    .contenedor-contact header .menu-color div .color-letras {
-      color: black;
-      text-align: center; }
-    .contenedor-contact header .menu-color div .color-letras:hover {
-      color: whitesmoke;
-      position: relative;
-      left: 2rem; }
+.contenedor .section-dos, .contenedor .section-seis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EECA9F;
+  margin-bottom: 1.5rem; }
+  .contenedor .section-dos h3, .contenedor .section-seis h3 {
+    font-size: 1.8rem;
+    color: whitesmoke;
+    background-color: #272E36;
+    padding: .7rem;
+    border-radius: 2rem; }
 
-.contenedor-contact footer {
-  grid-area: footer;
+.contenedor .section-tres, .contenedor .section-cuatro, .contenedor .section-cinco {
+  text-align: center;
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  font-size: .8rem; }
+  .contenedor .section-tres h4, .contenedor .section-cuatro h4, .contenedor .section-cinco h4 {
+    font-size: 1rem; }
+  .contenedor .section-tres ul, .contenedor .section-cuatro ul, .contenedor .section-cinco ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex: column;
+    padding: 1rem;
+    justify-content: space-around; }
+    .contenedor .section-tres ul li, .contenedor .section-cuatro ul li, .contenedor .section-cinco ul li {
+      padding: .8rem;
+      background-color: #514e4e;
+      border-radius: 1rem;
+      border: 0.1rem solid #EECA9F; }
+
+.contenedor-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 35% 15% 15% 6% 54.5% 10%;
+  font-size: .7rem;
   text-align: center;
-  background-color: #EECA9F;
-  gap: .5rem; }
-  .contenedor-contact footer div h4 {
-    font-size: .8rem; }
-  .contenedor-contact footer .redes a {
-    text-decoration: none;
+  gap: .5rem;
+  grid-template-areas: "header" "main-dos" "section-diez" "section-once" "section-doce" "section-trece" "footer"; }
+  .contenedor-contact header {
+    grid-area: header; }
+    .contenedor-contact header .menu-color {
+      background-color: #EECA9F;
+      text-transform: uppercase; }
+      .contenedor-contact header .menu-color div .color-letras {
+        color: black;
+        text-align: center; }
+      .contenedor-contact header .menu-color div .color-letras:hover {
+        color: whitesmoke;
+        position: relative;
+        left: 2rem; }
+  .contenedor-contact .main-dos {
+    grid-area: main-dos;
+    border: 0.1rem solid #EECA9F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 1rem; }
+  .contenedor-contact .section-diez {
+    grid-area: section-diez;
     color: whitesmoke;
-    padding: .3rem;
-    border-radius: 1rem;
-    background-color: #272E36;
-    border: .1rem solid black; }
+    font-size: .7rem; }
+    .contenedor-contact .section-diez .title-consultas {
+      background-color: #EECA9F; }
+  .contenedor-contact .section-once {
+    grid-area: section-once;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    gap: 2rem;
+    font-size: .7rem; }
+    .contenedor-contact .section-once a {
+      display: flex;
+      flex-direction: row;
+      margin: .5rem;
+      text-decoration: none;
+      color: whitesmoke;
+      background-color: #EECA9F;
+      padding: .8rem;
+      border-radius: 50%; }
+      .contenedor-contact .section-once a i {
+        font-size: 1.5rem; }
+  .contenedor-contact .section-doce {
+    grid-area: section-doce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EECA9F;
+    border: .1rem solid black;
+    color: whitesmoke; }
+    .contenedor-contact .section-doce h3 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      background-color: #272E36;
+      border-radius: 2rem;
+      padding: .7rem; }
+  .contenedor-contact .section-trece {
+    grid-area: section-trece;
+    border: .1rem solid black;
+    color: whitesmoke;
+    margin-top: .7rem; }
+    .contenedor-contact .section-trece form fieldset legend {
+      background-color: #EECA9F;
+      display: flex;
+      justify-content: start;
+      color: black;
+      gap: 1rem;
+      margin-bottom: 1rem; }
+    .contenedor-contact .section-trece form fieldset .form-datos {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      justify-content: center;
+      font-size: 1rem; }
+    .contenedor-contact .section-trece form fieldset .botones-form {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      justify-content: center;
+      font-size: 1rem; }
+      .contenedor-contact .section-trece form fieldset .botones-form input {
+        border-radius: 50%;
+        background-color: #EECA9F;
+        padding: .2rem;
+        border: .1rem solid black; }
+  .contenedor-contact .section-catorce {
+    grid-area: section-catorce;
+    display: none; }
+  .contenedor-contact footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #EECA9F;
+    gap: .5rem; }
+    .contenedor-contact footer div h4 {
+      font-size: .8rem; }
+    .contenedor-contact footer .redes a {
+      text-decoration: none;
+      color: whitesmoke;
+      padding: .3rem;
+      border-radius: 1rem;
+      background-color: #272E36;
+      border: .1rem solid black; }
+
+/* MQ PARA TABLET */
+@media screen and (min-width: 600px) {
+  .contenedor-contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 8% 25% 30% 10% 66% 10%;
+    font-size: .6rem;
+    text-align: center;
+    gap: .7rem;
+    grid-template-areas: "header header" "main-dos main-dos" "section-diez section-once" "section-catorce section-doce" "section-catorce section-trece" "footer footer"; }
+    .contenedor-contact .section-catorce {
+      display: none;
+      border: .1rem solid black;
+      height: 850px; } }
+
+/* MQ para desktop */
+@media screen and (min-width: 1024px) {
+  .contenedor-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 8% 25% 35% 6% 40% 10%;
+    font-size: .6rem;
+    text-align: center;
+    gap: .7rem;
+    grid-template-areas: "header header" "main-dos main-dos" "section-diez section-once" "section-catorce section-doce" "section-catorce section-trece" "footer footer"; }
+    .contenedor-contact .section-catorce {
+      display: block;
+      width: 10rem;
+      height: 100px;
+      margin-left: 4rem; }
+      .contenedor-contact .section-catorce img {
+        height: 350px; }
+    .contenedor-contact .section-once {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      gap: 2rem;
+      font-size: .7rem; }
+      .contenedor-contact .section-once a {
+        background-color: #EECA9F;
+        display: flex;
+        flex-direction: column;
+        margin: .5rem;
+        text-decoration: none;
+        color: whitesmoke;
+        padding: .8rem;
+        border-radius: 50%; }
+    .contenedor-contact .section-doce {
+      background-color: #EECA9F;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contenedor-contact .section-doce h3 {
+        background-color: #272E36;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        border-radius: 2rem;
+        padding: 1rem; }
+    .contenedor-contact .section-trece form fieldset legend {
+      background-color: #EECA9F;
+      display: flex;
+      justify-content: start;
+      color: black;
+      gap: 1rem;
+      margin-bottom: 1rem; }
+    .contenedor-contact .section-trece form fieldset .form-datos {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      justify-content: center;
+      font-size: 1rem; }
+    .contenedor-contact .section-trece form fieldset .botones-form input {
+      border-radius: 50%;
+      background-color: #EECA9D;
+      padding: .2rem;
+      border: .1rem solid black; } }
 
 /* works */
 .contenedor-works header {

@@ -256,36 +256,100 @@ body {
       align-items: center; } }
 
 /* about */
-.contenedor-about header {
-  grid-area: header; }
-  .contenedor-about header .menu-color {
-    background-color: #EECA9F;
-    text-transform: uppercase; }
-    .contenedor-about header .menu-color div .color-letras {
-      color: black;
-      text-align: center; }
-    .contenedor-about header .menu-color div .color-letras:hover {
-      color: whitesmoke;
-      position: relative;
-      left: 2rem; }
-
-.contenedor-about footer {
-  grid-area: footer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.contenedor-about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7% 25% 7% 70% 10%;
+  gap: 1rem;
+  grid-template-areas: "header" "main-tres" "section-dieciseis-bis" "section-dieciseis" "footer";
+  font-size: .7rem;
   text-align: center;
-  background-color: #EECA9F;
-  gap: .5rem; }
-  .contenedor-about footer div h4 {
-    font-size: .8rem; }
-  .contenedor-about footer .redes a {
-    text-decoration: none;
-    color: whitesmoke;
-    padding: .3rem;
-    border-radius: 1rem;
-    background-color: #272E36;
+  color: whitesmoke; }
+  .contenedor-about header {
+    grid-area: header; }
+    .contenedor-about header .menu-color {
+      background-color: #EECA9F;
+      text-transform: uppercase; }
+      .contenedor-about header .menu-color div .color-letras {
+        color: black;
+        text-align: center; }
+      .contenedor-about header .menu-color div .color-letras:hover {
+        color: whitesmoke;
+        position: relative;
+        left: 2rem; }
+  .contenedor-about .main-tres {
+    grid-area: main-tres; }
+  .contenedor-about .section-quince {
+    grid-area: section-quince;
+    display: none; }
+  .contenedor-about .section-dieciseis-bis {
+    grid-area: section-dieciseis-bis;
+    background-color: #EECA9F;
     border: .1rem solid black; }
+  .contenedor-about .section-dieciseis {
+    grid-area: section-dieciseis; }
+    .contenedor-about .section-dieciseis p {
+      font-size: 1rem; }
+  .contenedor-about .section-veintiuno {
+    grid-area: section-veintiuno; }
+  .contenedor-about .section-veintiuno {
+    grid-area: section-veintiuno; }
+  .contenedor-about footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #EECA9F;
+    gap: .5rem; }
+    .contenedor-about footer div h4 {
+      font-size: .8rem; }
+    .contenedor-about footer .redes a {
+      text-decoration: none;
+      color: whitesmoke;
+      padding: .3rem;
+      border-radius: 1rem;
+      background-color: #272E36;
+      border: .1rem solid black; }
+
+/* MQ PARA TABLET */
+@media screen and (min-width: 600px) {
+  .contenedor-about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10% 30% 75% 10%;
+    grid-template-areas: "header header" "main-tres main-tres" "section-quince section-dieciseis" "footer footer";
+    font-size: .7rem;
+    gap: 1rem;
+    text-align: center; }
+    .contenedor-about .section-quince {
+      display: block; } }
+
+/* MQ para desktop */
+@media screen and (min-width: 1024px) {
+  .contenedor-about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 7% 30% 6% 65% 8%;
+    gap: 1rem;
+    grid-template-areas: "header header" "main-tres main-tres" "section-quince section-dieciseis-bis" "section-quince section-dieciseis" "footer footer";
+    font-size: .7rem;
+    text-align: center;
+    color: whitesmoke; }
+    .contenedor-about header {
+      grid-area: header; }
+      .contenedor-about header .menu-color {
+        background-color: #EECA9F;
+        text-transform: uppercase; }
+        .contenedor-about header .menu-color div .color-letras {
+          display: flex;
+          text-decoration: solid; }
+        .contenedor-about header .menu-color div .color-letras:hover {
+          color: whitesmoke;
+          border-bottom: .1rem solid whitesmoke;
+          left: 0; }
+    .contenedor-about .section-dieciseis-bis, .contenedor-about .section-dieciseis {
+      margin-right: 2rem; } }
 
 /* contact */
 .contenedor .section-dos, .contenedor .section-seis {

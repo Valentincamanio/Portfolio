@@ -8,16 +8,79 @@
 @import "../utilidades/mixin";
 
 .contenedor-about{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7% 25% 7% 70% 10%;
+    gap: 1rem;
+    grid-template-areas: 
+    "header""main-tres""section-dieciseis-bis""section-dieciseis""footer";
+    font-size: .7rem;
+    text-align: center;
+    color: whitesmoke;
     header{
         @include header;
     }
-
-
-
-
+    .main-tres{
+        grid-area: main-tres;
+    }
+    .section-quince{
+        grid-area: section-quince;
+        display: none;
+    }
+    .section-dieciseis-bis{
+        grid-area: section-dieciseis-bis;
+        background-color: $color-secundario;
+        border: .1rem solid black;
+    }
+    .section-dieciseis{
+        grid-area: section-dieciseis;
+        p{
+            font-size: 1rem;
+        }
+    }
+    .section-veintiuno{
+        grid-area: section-veintiuno;
+    }
+    .section-veintiuno{
+        grid-area: section-veintiuno;
+    }
     footer{
         grid-area: footer;
         @include footer;
     }
 
+}
+/* MQ PARA TABLET */
+@media screen and (min-width:600px){
+    .contenedor-about{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 10% 30% 75% 10%;
+        grid-template-areas: "header header""main-tres main-tres""section-quince section-dieciseis""footer footer";
+        font-size: .7rem;
+        gap: 1rem;
+        text-align: center;
+        .section-quince {
+            display: block;
+        }
+    }
+}
+/* MQ para desktop */
+@media screen and (min-width:1024px){
+    .contenedor-about{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 7% 30% 6% 65% 8%;
+        gap: 1rem;
+        grid-template-areas: "header header""main-tres main-tres""section-quince section-dieciseis-bis""section-quince section-dieciseis""footer footer";
+        font-size: .7rem;
+        text-align: center;
+        color: whitesmoke;
+        header{
+            @include header-desktop;
+        }
+        .section-dieciseis-bis , .section-dieciseis{
+            margin-right: 2rem;
+        }
+    }
 }

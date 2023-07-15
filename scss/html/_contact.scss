@@ -163,6 +163,9 @@
         "section-catorce section-trece"
         "footer footer"
         ;
+        header{
+            @include header-desktop;
+        }
         .section-catorce{
             display: block;
             width: 10rem;

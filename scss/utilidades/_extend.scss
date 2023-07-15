@@ -46,3 +46,23 @@
         }
     }  
 }
+
+%works{
+    border: .1rem solid whitesmoke;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    color: whitesmoke;
+    img{
+        height: 6rem;
+        width: 10rem;
+        border: .2rem solid $color-secundario;
+    }
+    div{
+        ul{
+            text-align: start;
+            margin: 0;
+        }
+    }
+}

@@ -1,7 +1,8 @@
-//variables
+//variables y utilidades
 @import "utilidades/variables";
+@import "utilidades/mixin";
 
-//reset
+//reset y estilos generales
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +14,10 @@ body{
     font-family: 'Open Sans', sans-serif;
     main{
         background-image: url(../img/8586d3fb48f4ee5640f9a45b239f6a76.jpg);
+        margin: 1rem;
+        border-radius: 1rem;
+        border: .1rem solid $color-secundario;
+        @include flex;
         h1{
             font-size: 1.8em;
             text-transform: uppercase;

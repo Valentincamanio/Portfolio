@@ -35,10 +35,6 @@
     }
     main{
         grid-area: main;
-        border: .1rem solid #EECA9F;
-        @include flex;
-        margin: 1rem;
-        border-radius: 1rem;
         h1{
             b{
                 span{
@@ -183,6 +179,9 @@
         "section-siete section-ocho section-nueve"
         "footer footer footer"
         ;
+        header{
+            @include header-desktop;
+        }
         .section-uno{
             display: block;
             img{

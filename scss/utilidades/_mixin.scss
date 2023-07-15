@@ -36,6 +36,25 @@
     }
 }
 
+@mixin header-desktop{
+    grid-area: header;
+    .menu-color{
+        background-color: $color-secundario;
+        text-transform: uppercase;
+        div{
+            .color-letras{
+                display: flex;
+                text-decoration: solid;
+            }
+            .color-letras:hover{
+                color: whitesmoke;
+                border-bottom: .1rem solid whitesmoke;
+                left: 0;
+            }
+        }
+    }
+}
+
 @mixin works{
     display: flex;
     flex-direction: column;
@@ -78,4 +97,24 @@
     @include flex;
     margin: 1rem;
     border-radius: 1rem;
+}
+
+@mixin works-mq{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: start;
+    div{
+        img{
+            height: 7rem;
+            width: 12rem;
+        }        
+    }
+    div{
+        ul{
+            margin: 0;
+        }
+    }
+
 }

@@ -25,13 +25,10 @@
         grid-area: section-diecisiete;
         background-color: $color-secundario;
         @include flex;
-        margin-bottom: 1.2rem;
         h4{
-            background-color: $color-principal;
             color: whitesmoke;
             font-size: 1.3rem;
-            padding: .7rem;
-            border-radius: 2rem;
+            font-family: 'Open Sans', sans-serif;
         }
     }
     .section-dieciocho{
@@ -72,9 +69,8 @@
             @include header-desktop;
         }
         .section-diecisiete{
-            background-color: $color-principal;
+            background-color: $color-secundario;
             h4{
-                background-color: $color-secundario;
                 padding: 2rem;
                 text-align: center;
                 border-radius: 60%;

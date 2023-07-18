@@ -75,16 +75,18 @@
         grid-area: section-trece;
         border: .1rem solid black;
         color: whitesmoke;
-        margin-top: .7rem;
+        margin: 1rem;
+        border-radius: 10px;
         form{
             fieldset{
                 legend{
                     background-color: $color-secundario;
                     display: flex;
-                    justify-content: start;
-                    color: black;
+                    justify-content: center;
+                    color: whitesmoke;
                     gap: 1rem;
-                    margin-bottom: 1rem;
+                    margin-bottom: 2rem;
+                    border-radius: 10px;
                 }
                 .form-datos{
                     display: flex;
@@ -102,9 +104,13 @@
                     input{
                         border-radius: 50%;
                         background-color: $color-secundario;
-                        padding: .2rem;
+                        padding: .6rem;
                         border: .1rem solid black;
-                    } 
+                        color: whitesmoke;
+                    }
+                    input:hover{
+                        color: red;
+                    }
                 }
             }    
         }
@@ -123,7 +129,7 @@
 @media screen and (min-width:600px){
     .contenedor-contact{
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 8% 25% 30% 10% 66% 10%;
         font-size: .6rem;
         text-align: center;

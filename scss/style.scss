@@ -10,7 +10,7 @@
 }
  
 body{
-    background-color: $color-principal;
+    background: linear-gradient(90deg, hsl(197, 56%, 59%) 0%, #010843 100%);
     font-family: 'Open Sans', sans-serif;
     main{
         background-image: url(../img/8586d3fb48f4ee5640f9a45b239f6a76.jpg);
@@ -19,10 +19,10 @@ body{
         border: .1rem solid $color-secundario;
         @include flex;
         h1{
-            font-size: 1.8em;
+            font-size: 2.2em;
             text-transform: uppercase;
             text-align: center;
-            color: whitesmoke;
+            color: $color-secundario;
         }
     } 
 }

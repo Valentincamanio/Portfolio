@@ -4,35 +4,31 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #272E36;
+  background: linear-gradient(90deg, #5cb0d1 0%, #010843 100%);
   font-family: 'Open Sans', sans-serif; }
   body main {
     background-image: url(../img/8586d3fb48f4ee5640f9a45b239f6a76.jpg);
     margin: 1rem;
     border-radius: 1rem;
-    border: 0.1rem solid #EECA9F;
+    border: 0.1rem solid #2B2C32;
     display: flex;
     justify-content: center;
     align-items: center; }
     body main h1 {
-      font-size: 1.8em;
+      font-size: 2.2em;
       text-transform: uppercase;
       text-align: center;
-      color: whitesmoke; }
+      color: #2B2C32; }
 
 /* home */
 .contenedor .section-dos, .contenedor .section-seis {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EECA9F;
-  margin-bottom: 1.5rem; }
+  background-color: #2B2C32; }
   .contenedor .section-dos h3, .contenedor .section-seis h3 {
     font-size: 1.8rem;
-    color: whitesmoke;
-    background-color: #272E36;
-    padding: .7rem;
-    border-radius: 2rem; }
+    color: #D9DFE5; }
 
 .contenedor .section-tres, .contenedor .section-cuatro, .contenedor .section-cinco {
   text-align: center;
@@ -50,10 +46,10 @@ body {
     padding: 1rem;
     justify-content: space-around; }
     .contenedor .section-tres ul li, .contenedor .section-cuatro ul li, .contenedor .section-cinco ul li {
-      padding: .8rem;
+      padding: 1.5rem;
       background-color: #514e4e;
-      border-radius: 1rem;
-      border: 0.1rem solid #EECA9F; }
+      border-radius: 2rem;
+      border: 0.1rem solid #2B2C32; }
 
 .contenedor-works .section-dieciocho, .contenedor-works .section-diecinueve, .contenedor-works .section-veinte {
   border: .1rem solid whitesmoke;
@@ -65,7 +61,7 @@ body {
   .contenedor-works .section-dieciocho img, .contenedor-works .section-diecinueve img, .contenedor-works .section-veinte img {
     height: 6rem;
     width: 10rem;
-    border: 0.2rem solid #EECA9F; }
+    border: 0.2rem solid #2B2C32; }
   .contenedor-works .section-dieciocho div ul, .contenedor-works .section-diecinueve div ul, .contenedor-works .section-veinte div ul {
     text-align: start;
     margin: 0; }
@@ -73,19 +69,19 @@ body {
 .contenedor {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3.7% 15% 2% 6% 4% 11% 11% 11% 4% 18% 20% 16% 4%;
+  grid-template-rows: 3.7% 15% 2% 13% 4.5% 11% 11% 11% 4.5% 18% 20% 16% 4%;
   font-size: .7rem;
   grid-template-areas: "header" "main" "section-dos-bis" "section-dos-tris" "section-dos" "section-tres" "section-cuatro" "section-cinco" "section-seis" "section-siete" "section-ocho" "section-nueve" "footer"; }
   .contenedor header {
     grid-area: header; }
     .contenedor header .menu-color {
-      background-color: #EECA9F;
+      background-color: #2B2C32;
       text-transform: uppercase; }
       .contenedor header .menu-color div .color-letras {
-        color: black;
+        color: #D9DFE5;
         text-align: center; }
       .contenedor header .menu-color div .color-letras:hover {
-        color: whitesmoke;
+        color: #770707;
         position: relative;
         left: 2rem; }
   .contenedor .section-uno {
@@ -99,14 +95,17 @@ body {
   .contenedor .section-dos-bis {
     grid-area: section-dos-bis;
     text-align: center;
-    color: whitesmoke; }
+    color: #D9DFE5;
+    text-decoration: underline; }
   .contenedor .section-dos-tris {
     grid-area: section-dos-tris;
-    color: whitesmoke;
+    color: #D9DFE5;
     margin: 0rem 1rem 1rem 1rem;
-    text-align: center; }
+    text-align: center;
+    font-size: .8rem; }
   .contenedor .section-dos {
-    grid-area: section-dos; }
+    grid-area: section-dos;
+    margin-bottom: 1rem; }
   .contenedor .section-tres {
     grid-area: section-tres; }
   .contenedor .section-cuatro {
@@ -114,7 +113,8 @@ body {
   .contenedor .section-cinco {
     grid-area: section-cinco; }
   .contenedor .section-seis {
-    grid-area: section-seis; }
+    grid-area: section-seis;
+    margin-bottom: 1rem; }
   .contenedor .section-siete {
     grid-area: section-siete;
     display: flex;
@@ -150,27 +150,28 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #EECA9F;
-    gap: .5rem; }
-    .contenedor footer div h4 {
-      font-size: .8rem; }
+    background-color: #2B2C32;
+    gap: .5rem;
+    color: #D9DFE5; }
+    .contenedor footer div h6 {
+      font-size: 1rem; }
     .contenedor footer .redes a {
-      text-decoration: none;
-      color: whitesmoke;
-      padding: .3rem;
-      border-radius: 1rem;
-      background-color: #272E36;
-      border: .1rem solid black; }
+      color: whitesmoke; }
+      .contenedor footer .redes a i {
+        font-size: 1.2rem;
+        margin: 0rem .5rem; }
 
 /* MQ PARA TABLET */
 @media screen and (min-width: 600px) {
   .contenedor {
     display: grid;
     grid-template-columns: repeat(2, 48.8%);
-    grid-template-rows: 3.7% 25% 3% 4% 4% 10% 8% 4% 18% 18% 7%;
+    grid-template-rows: 3.7% 12% 2% 12% 4.5% 10% 8% 4.5% 18% 18% 7%;
     gap: 1rem;
     text-align: center;
-    grid-template-areas: "header header" "main main" "section-dos-bis section-dos-bis" "section-dos-tris section-dos-tris" "section-dos section-dos" "section-tres section-cuatro" "section-cinco section-cinco" "section-seis section-seis" "section-siete section-ocho" "section-nueve section-nueve" "footer footer"; }
+    grid-template-areas: "header header" "main main" "section-dos-bis section-dos-bis" "section-dos-tris section-dos-tris" "section-dos section-dos" "section-tres section-cuatro" "section-cinco section-cinco" "section-seis section-seis" "section-siete section-ocho" "section-nueve section-nueve" "footer footer"; }
+    .contenedor .section-dos-tris {
+      font-size: .9rem; }
     .contenedor .section-tres ul {
       display: flex;
       flex: column;
@@ -206,14 +207,14 @@ body {
 @media screen and (min-width: 1024px) {
   .contenedor {
     grid-template-columns: repeat(3, 32.6%);
-    grid-template-rows: 3.7% 25% 5% 5% 4% 15% 4% 25% 5%;
+    grid-template-rows: 3.7% 15% 4% 22% 6% 15% 6% 25% 6%;
     gap: 1rem;
     text-align: center;
-    grid-template-areas: "header header header" "section-uno main main" "section-uno section-dos-bis section-dos-bis" "section-uno section-dos-tris section-dos-tris" "section-dos section-dos section-dos" "section-tres section-cuatro section-cinco" "section-seis section-seis section-seis" "section-siete section-ocho section-nueve" "footer footer footer"; }
+    grid-template-areas: "header header header" "section-uno main main" "section-uno section-dos-bis section-dos-bis" "section-uno section-dos-tris section-dos-tris" "section-dos section-dos section-dos" "section-tres section-cuatro section-cinco" "section-seis section-seis section-seis" "section-siete section-ocho section-nueve" "footer footer footer"; }
     .contenedor header {
       grid-area: header; }
       .contenedor header .menu-color {
-        background-color: #EECA9F;
+        background-color: #2B2C32;
         text-transform: uppercase; }
         .contenedor header .menu-color div .color-letras {
           display: flex;
@@ -229,7 +230,10 @@ body {
         width: 100%;
         object-fit: cover; }
     .contenedor .section-dos-bis {
-      margin-top: 1rem; }
+      margin-top: 2rem; }
+    .contenedor .section-dos-tris {
+      margin-top: 1.5rem;
+      font-size: 1rem; }
     .contenedor .section-tres {
       display: flex;
       justify-content: center;
@@ -264,17 +268,17 @@ body {
   grid-template-areas: "header" "main-tres" "section-dieciseis-bis" "section-dieciseis" "footer";
   font-size: .7rem;
   text-align: center;
-  color: whitesmoke; }
+  color: #2B2C32; }
   .contenedor-about header {
     grid-area: header; }
     .contenedor-about header .menu-color {
-      background-color: #EECA9F;
+      background-color: #2B2C32;
       text-transform: uppercase; }
       .contenedor-about header .menu-color div .color-letras {
-        color: black;
+        color: #D9DFE5;
         text-align: center; }
       .contenedor-about header .menu-color div .color-letras:hover {
-        color: whitesmoke;
+        color: #770707;
         position: relative;
         left: 2rem; }
   .contenedor-about .main-tres {
@@ -284,8 +288,9 @@ body {
     display: none; }
   .contenedor-about .section-dieciseis-bis {
     grid-area: section-dieciseis-bis;
-    background-color: #EECA9F;
-    border: .1rem solid black; }
+    background-color: #2B2C32;
+    border: .1rem solid black;
+    color: #D9DFE5; }
   .contenedor-about .section-dieciseis {
     grid-area: section-dieciseis; }
     .contenedor-about .section-dieciseis p {
@@ -300,17 +305,16 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #EECA9F;
-    gap: .5rem; }
-    .contenedor-about footer div h4 {
-      font-size: .8rem; }
+    background-color: #2B2C32;
+    gap: .5rem;
+    color: #D9DFE5; }
+    .contenedor-about footer div h6 {
+      font-size: 1rem; }
     .contenedor-about footer .redes a {
-      text-decoration: none;
-      color: whitesmoke;
-      padding: .3rem;
-      border-radius: 1rem;
-      background-color: #272E36;
-      border: .1rem solid black; }
+      color: whitesmoke; }
+      .contenedor-about footer .redes a i {
+        font-size: 1.2rem;
+        margin: 0rem .5rem; }
 
 /* MQ PARA TABLET */
 @media screen and (min-width: 600px) {
@@ -339,7 +343,7 @@ body {
     .contenedor-about header {
       grid-area: header; }
       .contenedor-about header .menu-color {
-        background-color: #EECA9F;
+        background-color: #2B2C32;
         text-transform: uppercase; }
         .contenedor-about header .menu-color div .color-letras {
           display: flex;
@@ -356,14 +360,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EECA9F;
-  margin-bottom: 1.5rem; }
+  background-color: #2B2C32; }
   .contenedor .section-dos h3, .contenedor .section-seis h3 {
     font-size: 1.8rem;
-    color: whitesmoke;
-    background-color: #272E36;
-    padding: .7rem;
-    border-radius: 2rem; }
+    color: #D9DFE5; }
 
 .contenedor .section-tres, .contenedor .section-cuatro, .contenedor .section-cinco {
   text-align: center;
@@ -381,10 +381,10 @@ body {
     padding: 1rem;
     justify-content: space-around; }
     .contenedor .section-tres ul li, .contenedor .section-cuatro ul li, .contenedor .section-cinco ul li {
-      padding: .8rem;
+      padding: 1.5rem;
       background-color: #514e4e;
-      border-radius: 1rem;
-      border: 0.1rem solid #EECA9F; }
+      border-radius: 2rem;
+      border: 0.1rem solid #2B2C32; }
 
 .contenedor-works .section-dieciocho, .contenedor-works .section-diecinueve, .contenedor-works .section-veinte {
   border: .1rem solid whitesmoke;
@@ -396,7 +396,7 @@ body {
   .contenedor-works .section-dieciocho img, .contenedor-works .section-diecinueve img, .contenedor-works .section-veinte img {
     height: 6rem;
     width: 10rem;
-    border: 0.2rem solid #EECA9F; }
+    border: 0.2rem solid #2B2C32; }
   .contenedor-works .section-dieciocho div ul, .contenedor-works .section-diecinueve div ul, .contenedor-works .section-veinte div ul {
     text-align: start;
     margin: 0; }
@@ -412,18 +412,18 @@ body {
   .contenedor-contact header {
     grid-area: header; }
     .contenedor-contact header .menu-color {
-      background-color: #EECA9F;
+      background-color: #2B2C32;
       text-transform: uppercase; }
       .contenedor-contact header .menu-color div .color-letras {
-        color: black;
+        color: #D9DFE5;
         text-align: center; }
       .contenedor-contact header .menu-color div .color-letras:hover {
-        color: whitesmoke;
+        color: #770707;
         position: relative;
         left: 2rem; }
   .contenedor-contact .main-dos {
     grid-area: main-dos;
-    border: 0.1rem solid #EECA9F;
+    border: 0.1rem solid #2B2C32;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,7 +434,7 @@ body {
     color: whitesmoke;
     font-size: .7rem; }
     .contenedor-contact .section-diez .title-consultas {
-      background-color: #EECA9F; }
+      background-color: #2B2C32; }
   .contenedor-contact .section-once {
     grid-area: section-once;
     display: flex;
@@ -449,7 +449,7 @@ body {
       margin: .5rem;
       text-decoration: none;
       color: whitesmoke;
-      background-color: #EECA9F;
+      background-color: #2B2C32;
       padding: .8rem;
       border-radius: 50%; }
       .contenedor-contact .section-once a i {
@@ -459,27 +459,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EECA9F;
+    background-color: #2B2C32;
     border: .1rem solid black;
     color: whitesmoke; }
     .contenedor-contact .section-doce h3 {
       font-size: 1.5rem;
       text-transform: uppercase;
-      background-color: #272E36;
+      background-color: #D9DFE5;
       border-radius: 2rem;
       padding: .7rem; }
   .contenedor-contact .section-trece {
     grid-area: section-trece;
     border: .1rem solid black;
     color: whitesmoke;
-    margin-top: .7rem; }
+    margin: 1rem;
+    border-radius: 10px; }
     .contenedor-contact .section-trece form fieldset legend {
-      background-color: #EECA9F;
+      background-color: #2B2C32;
       display: flex;
-      justify-content: start;
-      color: black;
+      justify-content: center;
+      color: whitesmoke;
       gap: 1rem;
-      margin-bottom: 1rem; }
+      margin-bottom: 2rem;
+      border-radius: 10px; }
     .contenedor-contact .section-trece form fieldset .form-datos {
       display: flex;
       gap: 1rem;
@@ -494,9 +496,12 @@ body {
       font-size: 1rem; }
       .contenedor-contact .section-trece form fieldset .botones-form input {
         border-radius: 50%;
-        background-color: #EECA9F;
-        padding: .2rem;
-        border: .1rem solid black; }
+        background-color: #2B2C32;
+        padding: .6rem;
+        border: .1rem solid black;
+        color: whitesmoke; }
+      .contenedor-contact .section-trece form fieldset .botones-form input:hover {
+        color: red; }
   .contenedor-contact .section-catorce {
     grid-area: section-catorce;
     display: none; }
@@ -506,23 +511,22 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #EECA9F;
-    gap: .5rem; }
-    .contenedor-contact footer div h4 {
-      font-size: .8rem; }
+    background-color: #2B2C32;
+    gap: .5rem;
+    color: #D9DFE5; }
+    .contenedor-contact footer div h6 {
+      font-size: 1rem; }
     .contenedor-contact footer .redes a {
-      text-decoration: none;
-      color: whitesmoke;
-      padding: .3rem;
-      border-radius: 1rem;
-      background-color: #272E36;
-      border: .1rem solid black; }
+      color: whitesmoke; }
+      .contenedor-contact footer .redes a i {
+        font-size: 1.2rem;
+        margin: 0rem .5rem; }
 
 /* MQ PARA TABLET */
 @media screen and (min-width: 600px) {
   .contenedor-contact {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 8% 25% 30% 10% 66% 10%;
     font-size: .6rem;
     text-align: center;
@@ -546,7 +550,7 @@ body {
     .contenedor-contact header {
       grid-area: header; }
       .contenedor-contact header .menu-color {
-        background-color: #EECA9F;
+        background-color: #2B2C32;
         text-transform: uppercase; }
         .contenedor-contact header .menu-color div .color-letras {
           display: flex;
@@ -570,7 +574,7 @@ body {
       gap: 2rem;
       font-size: .7rem; }
       .contenedor-contact .section-once a {
-        background-color: #EECA9F;
+        background-color: #2B2C32;
         display: flex;
         flex-direction: column;
         margin: .5rem;
@@ -579,18 +583,18 @@ body {
         padding: .8rem;
         border-radius: 50%; }
     .contenedor-contact .section-doce {
-      background-color: #EECA9F;
+      background-color: #2B2C32;
       display: flex;
       justify-content: center;
       align-items: center; }
       .contenedor-contact .section-doce h3 {
-        background-color: #272E36;
+        background-color: #D9DFE5;
         font-size: 1.5rem;
         text-transform: uppercase;
         border-radius: 2rem;
         padding: 1rem; }
     .contenedor-contact .section-trece form fieldset legend {
-      background-color: #EECA9F;
+      background-color: #2B2C32;
       display: flex;
       justify-content: start;
       color: black;
@@ -621,30 +625,27 @@ body {
   .contenedor-works header {
     grid-area: header; }
     .contenedor-works header .menu-color {
-      background-color: #EECA9F;
+      background-color: #2B2C32;
       text-transform: uppercase; }
       .contenedor-works header .menu-color div .color-letras {
-        color: black;
+        color: #D9DFE5;
         text-align: center; }
       .contenedor-works header .menu-color div .color-letras:hover {
-        color: whitesmoke;
+        color: #770707;
         position: relative;
         left: 2rem; }
   .contenedor-works .main-cuatro {
     grid-area: main-cuatro; }
   .contenedor-works .section-diecisiete {
     grid-area: section-diecisiete;
-    background-color: #EECA9F;
+    background-color: #2B2C32;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 1.2rem; }
+    align-items: center; }
     .contenedor-works .section-diecisiete h4 {
-      background-color: #272E36;
       color: whitesmoke;
       font-size: 1.3rem;
-      padding: .7rem;
-      border-radius: 2rem; }
+      font-family: 'Open Sans', sans-serif; }
   .contenedor-works .section-dieciocho {
     grid-area: section-dieciocho; }
   .contenedor-works .section-diecinueve {
@@ -657,17 +658,16 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #EECA9F;
-    gap: .5rem; }
-    .contenedor-works footer div h4 {
-      font-size: .8rem; }
+    background-color: #2B2C32;
+    gap: .5rem;
+    color: #D9DFE5; }
+    .contenedor-works footer div h6 {
+      font-size: 1rem; }
     .contenedor-works footer .redes a {
-      text-decoration: none;
-      color: whitesmoke;
-      padding: .3rem;
-      border-radius: 1rem;
-      background-color: #272E36;
-      border: .1rem solid black; }
+      color: whitesmoke; }
+      .contenedor-works footer .redes a i {
+        font-size: 1.2rem;
+        margin: 0rem .5rem; }
 
 /* MQ PARA TABLET */
 /* MQ para desktop */
@@ -682,7 +682,7 @@ body {
     .contenedor-works header {
       grid-area: header; }
       .contenedor-works header .menu-color {
-        background-color: #EECA9F;
+        background-color: #2B2C32;
         text-transform: uppercase; }
         .contenedor-works header .menu-color div .color-letras {
           display: flex;
@@ -692,9 +692,8 @@ body {
           border-bottom: .1rem solid whitesmoke;
           left: 0; }
     .contenedor-works .section-diecisiete {
-      background-color: #272E36; }
+      background-color: #2B2C32; }
       .contenedor-works .section-diecisiete h4 {
-        background-color: #EECA9F;
         padding: 2rem;
         text-align: center;
         border-radius: 60%;
@@ -737,13 +736,13 @@ body {
 .contenedor-services header {
   grid-area: header; }
   .contenedor-services header .menu-color {
-    background-color: #EECA9F;
+    background-color: #2B2C32;
     text-transform: uppercase; }
     .contenedor-services header .menu-color div .color-letras {
-      color: black;
+      color: #D9DFE5;
       text-align: center; }
     .contenedor-services header .menu-color div .color-letras:hover {
-      color: whitesmoke;
+      color: #770707;
       position: relative;
       left: 2rem; }
 
@@ -753,14 +752,13 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #EECA9F;
-  gap: .5rem; }
-  .contenedor-services footer div h4 {
-    font-size: .8rem; }
+  background-color: #2B2C32;
+  gap: .5rem;
+  color: #D9DFE5; }
+  .contenedor-services footer div h6 {
+    font-size: 1rem; }
   .contenedor-services footer .redes a {
-    text-decoration: none;
-    color: whitesmoke;
-    padding: .3rem;
-    border-radius: 1rem;
-    background-color: #272E36;
-    border: .1rem solid black; }
+    color: whitesmoke; }
+    .contenedor-services footer .redes a i {
+      font-size: 1.2rem;
+      margin: 0rem .5rem; }

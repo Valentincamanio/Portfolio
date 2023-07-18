@@ -24,11 +24,11 @@
         text-transform: uppercase;
         div{
             .color-letras{
-                color: black;
+                color: $color-principal;
                 text-align: center;
             }
             .color-letras:hover{
-                color: whitesmoke;
+                color: rgb(119, 7, 7);
                 position: relative;
                 left: 2rem;
             }
@@ -70,18 +70,18 @@
     text-align: center;
     background-color: $color-secundario;
     gap: .5rem;
+    color: $color-principal;
     div{
-        h4{
-            font-size: .8rem;  
+        h6{
+            font-size: 1rem; 
         }
     }
     .redes a{
-        text-decoration: none;
         color: whitesmoke;
-        padding: .3rem;
-        border-radius: 1rem;
-        background-color: $color-principal;
-        border: .1rem solid black;
+        i{
+            font-size: 1.2rem;
+            margin: 0rem .5rem; 
+        }
      }
 }
 

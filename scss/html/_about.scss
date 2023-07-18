@@ -16,7 +16,7 @@
     "header""main-tres""section-dieciseis-bis""section-dieciseis""footer";
     font-size: .7rem;
     text-align: center;
-    color: whitesmoke;
+    color: $color-secundario;
     header{
         @include header;
     }
@@ -31,6 +31,7 @@
         grid-area: section-dieciseis-bis;
         background-color: $color-secundario;
         border: .1rem solid black;
+        color: $color-principal;
     }
     .section-dieciseis{
         grid-area: section-dieciseis;

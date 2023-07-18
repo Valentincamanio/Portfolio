@@ -11,7 +11,7 @@
     }
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3.7% 15% 2% 6% 4% 11% 11% 11% 4% 18% 20% 16% 4%;
+    grid-template-rows: 3.7% 15% 2% 13% 4.5% 11% 11% 11% 4.5% 18% 20% 16% 4%;
     font-size: .7rem;
     grid-template-areas: 
     "header"
@@ -46,16 +46,19 @@
     .section-dos-bis{
         grid-area: section-dos-bis;
         text-align: center;
-        color: whitesmoke;
+        color: $color-principal;
+        text-decoration: underline;
     }
     .section-dos-tris{
         grid-area: section-dos-tris;
-        color: whitesmoke;
+        color: $color-principal;
         margin: 0rem 1rem 1rem 1rem;
         text-align: center;
+        font-size: .8rem;
     }
     .section-dos{
         grid-area: section-dos;
+        margin-bottom: 1rem;
         @extend %titulos
     }
     .section-tres{
@@ -72,6 +75,7 @@
     }
     .section-seis{
         grid-area: section-seis;
+        margin-bottom: 1rem;
         @extend %titulos;
     }
     .section-siete{
@@ -107,23 +111,15 @@
     .contenedor{
         display: grid;
         grid-template-columns: repeat(2, 48.8%);
-        grid-template-rows: 3.7% 25% 3% 4% 4% 10% 8% 4% 18% 18% 7%;
+        grid-template-rows: 3.7% 12% 2% 12% 4.5% 10% 8% 4.5% 18% 18% 7%;
         gap: 1rem;
         text-align: center;
     
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "section-dos-bis section-dos-bis"
-        "section-dos-tris section-dos-tris"
-        "section-dos section-dos"
-        "section-tres section-cuatro"
-        "section-cinco section-cinco"
-        "section-seis section-seis"
-        "section-siete section-ocho"
-        "section-nueve section-nueve"
-        "footer footer"
+        grid-template-areas: "header header""main main""section-dos-bis section-dos-bis""section-dos-tris section-dos-tris""section-dos section-dos""section-tres section-cuatro""section-cinco section-cinco""section-seis section-seis""section-siete section-ocho""section-nueve section-nueve""footer footer"
         ;
+        .section-dos-tris{
+            font-size: .9rem;
+        }
         .section-tres{
             ul{
                @include lenguajes-mq;
@@ -165,19 +161,10 @@
 @media screen and (min-width:1024px){
     .contenedor{
         grid-template-columns:repeat(3, 32.6%);
-        grid-template-rows: 3.7% 25% 5% 5% 4% 15% 4% 25% 5%;
+        grid-template-rows: 3.7% 15% 4% 22% 6% 15% 6% 25% 6%;
         gap: 1rem;
         text-align: center;
-        grid-template-areas: 
-        "header header header"
-        "section-uno main main"
-        "section-uno section-dos-bis section-dos-bis"
-        "section-uno section-dos-tris section-dos-tris"
-        "section-dos section-dos section-dos"
-        "section-tres section-cuatro section-cinco"
-        "section-seis section-seis section-seis"
-        "section-siete section-ocho section-nueve"
-        "footer footer footer"
+        grid-template-areas:"header header header""section-uno main main""section-uno section-dos-bis section-dos-bis""section-uno section-dos-tris section-dos-tris""section-dos section-dos section-dos""section-tres section-cuatro section-cinco""section-seis section-seis section-seis""section-siete section-ocho section-nueve""footer footer footer"
         ;
         header{
             @include header-desktop;
@@ -191,7 +178,11 @@
             } 
         }
         .section-dos-bis{
-            margin-top: 1rem;
+            margin-top: 2rem;
+        }
+        .section-dos-tris{
+            margin-top: 1.5rem;
+            font-size: 1rem;
         }
         .section-tres{
             @include flex;

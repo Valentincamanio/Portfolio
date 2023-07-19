@@ -105,8 +105,8 @@ body {
     grid-area: section-dos-tris;
     color: #D9DFE5;
     margin: 0rem 1rem 1rem 1rem;
-    text-align: center;
-    font-size: .8rem; }
+    text-align: start;
+    font-size: 1rem; }
   .contenedor .section-dos {
     grid-area: section-dos;
     margin-bottom: 1rem; }
@@ -242,7 +242,10 @@ body {
       margin-top: 2rem; }
     .contenedor .section-dos-tris {
       margin-top: 1.5rem;
-      font-size: 1rem; }
+      font-size: 1rem;
+      display: flex;
+      flex-direction: row;
+      margin-left: 4rem; }
     .contenedor .section-tres {
       display: flex;
       justify-content: center;
@@ -785,6 +788,21 @@ body {
       color: #770707;
       position: relative;
       left: 2rem; }
+
+.contenedor-services .main-cinco {
+  grid-area: main-cinco; }
+
+.contenedor-services .section-veintiuno {
+  grid-area: section-veintiuno; }
+
+.contenedor-services .container-servicios {
+  grid-area: container-servicios; }
+  .contenedor-services .container-servicios .section-tres {
+    grid-area: section-tres; }
+  .contenedor-services .container-servicios .section-cuatro {
+    grid-area: section-cuatro; }
+  .contenedor-services .container-servicios .section-cinco {
+    grid-area: section-cinco; }
 
 .contenedor-services footer {
   grid-area: footer;

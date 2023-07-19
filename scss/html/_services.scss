@@ -9,6 +9,28 @@
         @include header;
     }
 
+    .main-cinco{
+        grid-area: main-cinco;
+    }
+    .section-veintiuno{
+        grid-area: section-veintiuno;
+    }
+    .container-servicios{
+        grid-area: container-servicios;
+        .section-tres{
+            grid-area: section-tres;
+
+        }
+        .section-cuatro{
+            grid-area: section-cuatro;
+
+        }
+        .section-cinco{
+            grid-area: section-cinco;
+        }        
+    }
+
+
 
 
 

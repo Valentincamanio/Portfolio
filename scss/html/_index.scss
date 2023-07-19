@@ -53,8 +53,8 @@
         grid-area: section-dos-tris;
         color: $color-principal;
         margin: 0rem 1rem 1rem 1rem;
-        text-align: center;
-        font-size: .8rem;
+        text-align: start;
+        font-size: 1rem;
     }
     .section-dos{
         grid-area: section-dos;
@@ -183,6 +183,9 @@
         .section-dos-tris{
             margin-top: 1.5rem;
             font-size: 1rem;
+            display: flex;
+            flex-direction: row;
+            margin-left: 4rem;
         }
         .section-tres{
             @include flex;

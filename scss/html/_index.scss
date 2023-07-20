@@ -52,9 +52,12 @@
     .section-dos-tris{
         grid-area: section-dos-tris;
         color: $color-principal;
-        margin: 0rem 1rem 1rem 1rem;
+        margin: 0rem 1rem 1rem 0rem;
         text-align: start;
         font-size: 1rem;
+        ul{
+            list-style: none;
+        }
     }
     .section-dos{
         grid-area: section-dos;
@@ -110,7 +113,7 @@
 @media screen and (min-width:600px){
     .contenedor{
         display: grid;
-        grid-template-columns: repeat(2, 48.8%);
+        grid-template-columns: repeat(2, 49.1%);
         grid-template-rows: 3.7% 12% 2% 12% 4.5% 10% 8% 4.5% 18% 18% 7%;
         gap: 1rem;
         text-align: center;
@@ -118,7 +121,8 @@
         grid-template-areas: "header header""main main""section-dos-bis section-dos-bis""section-dos-tris section-dos-tris""section-dos section-dos""section-tres section-cuatro""section-cinco section-cinco""section-seis section-seis""section-siete section-ocho""section-nueve section-nueve""footer footer"
         ;
         .section-dos-tris{
-            font-size: .9rem;
+            font-size: 1.2rem;
+
         }
         .section-tres{
             ul{
@@ -182,7 +186,7 @@
         }
         .section-dos-tris{
             margin-top: 1.5rem;
-            font-size: 1rem;
+            font-size: 1.1rem;
             display: flex;
             flex-direction: row;
             margin-left: 4rem;

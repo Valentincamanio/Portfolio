@@ -104,9 +104,11 @@ body {
   .contenedor .section-dos-tris {
     grid-area: section-dos-tris;
     color: #D9DFE5;
-    margin: 0rem 1rem 1rem 1rem;
+    margin: 0rem 1rem 1rem 0rem;
     text-align: start;
     font-size: 1rem; }
+    .contenedor .section-dos-tris ul {
+      list-style: none; }
   .contenedor .section-dos {
     grid-area: section-dos;
     margin-bottom: 1rem; }
@@ -174,13 +176,13 @@ body {
 @media screen and (min-width: 600px) {
   .contenedor {
     display: grid;
-    grid-template-columns: repeat(2, 48.8%);
+    grid-template-columns: repeat(2, 49.1%);
     grid-template-rows: 3.7% 12% 2% 12% 4.5% 10% 8% 4.5% 18% 18% 7%;
     gap: 1rem;
     text-align: center;
     grid-template-areas: "header header" "main main" "section-dos-bis section-dos-bis" "section-dos-tris section-dos-tris" "section-dos section-dos" "section-tres section-cuatro" "section-cinco section-cinco" "section-seis section-seis" "section-siete section-ocho" "section-nueve section-nueve" "footer footer"; }
     .contenedor .section-dos-tris {
-      font-size: .9rem; }
+      font-size: 1.2rem; }
     .contenedor .section-tres ul {
       display: flex;
       flex: column;
@@ -242,7 +244,7 @@ body {
       margin-top: 2rem; }
     .contenedor .section-dos-tris {
       margin-top: 1.5rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
       display: flex;
       flex-direction: row;
       margin-left: 4rem; }
@@ -274,10 +276,9 @@ body {
 /* about */
 .contenedor-about {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 7% 25% 7% 70% 10%;
-  gap: 1rem;
-  grid-template-areas: "header" "main-tres" "section-dieciseis-bis" "section-dieciseis" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 6% 25% 5% 40% 5% 40% 10%;
+  grid-template-areas: "header" "main-tres" "section-dieciseis-bis" "section-dieciseis" "section-treintayuno" "section-treintaydos" "footer";
   font-size: .7rem;
   text-align: center;
   color: #2B2C32; }
@@ -308,13 +309,36 @@ body {
     border: .1rem solid black;
     color: #D9DFE5; }
   .contenedor-about .section-dieciseis {
-    grid-area: section-dieciseis; }
+    grid-area: section-dieciseis;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .contenedor-about .section-dieciseis p {
-      font-size: 1rem; }
+      font-size: 1rem;
+      margin: 1rem 2rem;
+      color: #D9DFE5; }
   .contenedor-about .section-veintiuno {
     grid-area: section-veintiuno; }
-  .contenedor-about .section-veintiuno {
-    grid-area: section-veintiuno; }
+  .contenedor-about .section-treinta {
+    grid-area: section-treinta;
+    display: none; }
+  .contenedor-about .section-treintayuno {
+    grid-area: section-treintayuno;
+    background-color: #2B2C32;
+    border: .1rem solid black;
+    color: #D9DFE5; }
+  .contenedor-about .section-treintaydos {
+    grid-area: section-treintaydos;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contenedor-about .section-treintaydos ul {
+      list-style: none; }
+      .contenedor-about .section-treintaydos ul li {
+        font-size: 1rem;
+        color: #D9DFE5;
+        text-align: start; }
   .contenedor-about footer {
     grid-area: footer;
     display: flex;
@@ -341,23 +365,33 @@ body {
 @media screen and (min-width: 600px) {
   .contenedor-about {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 10% 30% 75% 10%;
-    grid-template-areas: "header header" "main-tres main-tres" "section-quince section-dieciseis" "footer footer";
-    font-size: .7rem;
-    gap: 1rem;
+    grid-template-columns: 43% 56.8%;
+    grid-template-rows: 4% 18% 4% 44% 4% 45% 7%;
+    grid-template-areas: "header header" "main-tres main-tres" "section-dieciseis-bis section-dieciseis-bis" "section-quince section-dieciseis" "section-treintayuno section-treintayuno" "section-treinta section-treintaydos" "footer footer";
+    font-size: .8rem;
     text-align: center; }
     .contenedor-about .section-quince {
-      display: block; } }
+      display: block;
+      width: auto;
+      padding: 1rem; }
+      .contenedor-about .section-quince img {
+        height: 100%;
+        width: 100%; }
+    .contenedor-about .section-treinta {
+      display: block;
+      padding: 1rem; }
+      .contenedor-about .section-treinta img {
+        height: 100%;
+        width: 100%;
+        margin-left: 1rem; } }
 
 /* MQ para desktop */
 @media screen and (min-width: 1024px) {
   .contenedor-about {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 7% 30% 6% 65% 8%;
-    gap: 1rem;
-    grid-template-areas: "header header" "main-tres main-tres" "section-quince section-dieciseis-bis" "section-quince section-dieciseis" "footer footer";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 4.5% 15% 4% 40% 4% 40% 6%;
+    grid-template-areas: "header header" "main-tres main-tres" "section-dieciseis-bis section-dieciseis-bis" "section-quince section-dieciseis" "section-treintayuno section-treintayuno" "section-treinta section-treintaydos" "footer footer";
     font-size: .7rem;
     text-align: center;
     color: whitesmoke; }
@@ -373,8 +407,34 @@ body {
           color: whitesmoke;
           border-bottom: .1rem solid whitesmoke;
           left: 0; }
-    .contenedor-about .section-dieciseis-bis, .contenedor-about .section-dieciseis {
-      margin-right: 2rem; } }
+    .contenedor-about .section-quince {
+      display: block;
+      width: auto;
+      padding: 1rem; }
+      .contenedor-about .section-quince img {
+        height: 100%;
+        width: 100%; }
+    .contenedor-about .section-dieciseis-bis {
+      border-radius: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #2B2C32; }
+      .contenedor-about .section-dieciseis-bis h2 {
+        font-size: 1.5rem;
+        color: #D9DFE5;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center; }
+    .contenedor-about .section-treinta {
+      display: block;
+      padding: 2rem; }
+      .contenedor-about .section-treinta img {
+        height: 100%;
+        width: 100%;
+        margin-right: 1rem; }
+    .contenedor-about .section-treintaydos {
+      box-shadow: 2rem solid black; } }
 
 /* contact */
 .contenedor .section-dos, .contenedor .section-seis {

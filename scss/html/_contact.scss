@@ -8,7 +8,7 @@
 .contenedor-contact{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 35% 15% 15% 6% 54.5% 10%;
+    grid-template-rows: 6% 25% 16% 10% 6% 46.5% 8%;
     font-size: .7rem;
     text-align: center;
     gap: .5rem;
@@ -34,23 +34,27 @@
         font-size: .7rem;
         .title-consultas{
             background-color: $color-secundario;
+            padding: .7rem;
+            margin-bottom: 1rem;
+        }
+        div{
+            p{
+                margin: 0rem 1rem;
+            }
         }
     }
     .section-once{
         grid-area: section-once;
         @include flex;
         border: 0;
-        gap: 2rem;
-        font-size: .7rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
         a{
             display: flex;
             flex-direction: row;
             margin: .5rem;
             text-decoration: none;
-            color: whitesmoke;
-            background-color: $color-secundario;
-            padding: .8rem;
-            border-radius: 50%;
+            color: $color-principal;
             i{
                 font-size: 1.5rem;
             }
@@ -60,12 +64,9 @@
         grid-area: section-doce;
         @include flex;
         background-color: $color-secundario;
-        border: .1rem solid black;
-        color: whitesmoke;
+        color: $color-principal;
         h3{
             font-size: 1.5rem;
-            text-transform: uppercase;
-            background-color: $color-principal;
             border-radius: 2rem;
             padding: .7rem;
         }
@@ -82,18 +83,22 @@
                 legend{
                     background-color: $color-secundario;
                     display: flex;
-                    justify-content: center;
+                    justify-content: start;
                     color: whitesmoke;
                     gap: 1rem;
-                    margin-bottom: 2rem;
-                    border-radius: 10px;
+                    margin-bottom: 1rem;
+                    border-radius: 8px;
                 }
                 .form-datos{
                     display: flex;
                     gap: 1rem;
                     margin-bottom: 1rem;
                     justify-content: center;
+                    flex-direction: column;
                     font-size: 1rem;
+                    input{
+                        margin: 0rem 1rem;
+                    }
                 }
                 .botones-form{
                     display: flex;
@@ -130,22 +135,28 @@
     .contenedor-contact{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 8% 25% 30% 10% 66% 10%;
+        grid-template-rows: 5% 22% 10% 8% 6% 45% 8%;
         font-size: .6rem;
         text-align: center;
         gap: .7rem;
         grid-template-areas: 
         "header header"
         "main-dos main-dos"
-        "section-diez section-once"
-        "section-catorce section-doce"
+        "section-diez section-diez"
+        "section-once section-once"
+        "section-doce section-doce"
         "section-catorce section-trece"
         "footer footer"
         ;
         .section-catorce{
-            display: none;
-            border: .1rem solid black;
-            height: 850px;
+            display: block;
+            width: auto;
+            padding: 1rem;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
+            }
         }
 
     }
@@ -157,28 +168,27 @@
     .contenedor-contact{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 8% 25% 35% 6% 40% 10%;
+        grid-template-rows: 4% 19% 11% 5% 4% 46% 8%;
         font-size: .6rem;
         text-align: center;
         gap: .7rem;
         grid-template-areas: 
         "header header"
         "main-dos main-dos"
-        "section-diez section-once"
-        "section-catorce section-doce"
+        "section-diez section-diez"
+        "section-once section-once"
+        "section-doce section-doce"
         "section-catorce section-trece"
         "footer footer"
         ;
         header{
             @include header-desktop;
         }
-        .section-catorce{
-            display: block;
-            width: 10rem;
-            height: 100px;
-            margin-left: 4rem;
-            img{
-                height: 350px;
+        .section-diez{
+            div{
+                p{
+                    font-size: 1rem
+                }
             }
         }
         .section-once{
@@ -187,35 +197,29 @@
             gap: 2rem;
             font-size: .7rem;
             a{
-                background-color: $color-secundario;
                 display: flex;
                 flex-direction: column;
-                margin: .5rem;
                 text-decoration: none;
                 color: whitesmoke;
-                padding: .8rem;
-                border-radius: 50%;
             }
         }
         .section-doce{
             background-color: $color-secundario;
             @include flex;
             h3{
-                background-color: $color-principal;
                 font-size: 1.5rem;
-                text-transform: uppercase;
-                border-radius: 2rem;
                 padding: 1rem;
             }
         }
         .section-trece{
+            margin-top: 2rem;
             form{
                 fieldset{
                     legend{
                         background-color: $color-secundario;
                         display: flex;
-                        justify-content: start;
-                        color: black;
+                        justify-content: center;
+                        color: $color-principal;
                         gap: 1rem;
                         margin-bottom: 1rem;
                     }
@@ -228,13 +232,22 @@
                     }
                     .botones-form{
                         input{
-                            border-radius: 50%;
-                            background-color: #EECA9D;
-                            padding: .2rem;
-                            border: .1rem solid black;
+                            border-radius: 10px;
+                            padding: .4rem;
                         }
                     }
                 }
+            }
+        }
+        .section-catorce{
+            margin-top: 1rem;
+            display: block;
+            width: auto;
+            padding: 1rem;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
             }
         }
 

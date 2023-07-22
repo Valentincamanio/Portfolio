@@ -8,9 +8,7 @@
 }
 
 %titulos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     background-color: $color-secundario;
     h3{
         font-size: 1.8rem;
@@ -44,21 +42,38 @@
 }
 
 %works{
-    border: .1rem solid whitesmoke;
+    border: .2rem solid $color-principal;
     border-radius: 1rem;
     padding: 1rem;
     margin-left: .5rem;
     margin-right: .5rem;
-    color: whitesmoke;
+    color: $color-secundario;
+    background-color: #91afda;
+    font-size: .8rem;
     img{
         height: 6rem;
         width: 10rem;
         border: .2rem solid $color-secundario;
+        margin-bottom: .6rem;
     }
     div{
+        h3{
+            font-size: 1rem;
+        }
         ul{
             text-align: start;
             margin: 0;
         }
+    }
+}
+
+%carouseles{
+    h4{
+        text-align: center;
+        color: $color-principal;
+        margin-bottom: .9rem;
+    }
+    .carousel{
+        padding: 0rem 1rem;
     }
 }

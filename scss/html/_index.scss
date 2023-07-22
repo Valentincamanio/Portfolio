@@ -109,12 +109,11 @@
 
 /* MQ PARA TABLET */
 
-
 @media screen and (min-width:600px){
     .contenedor{
         display: grid;
         grid-template-columns: repeat(2, 49.1%);
-        grid-template-rows: 3.7% 12% 2% 12% 4.5% 10% 8% 4.5% 18% 18% 7%;
+        grid-template-rows: 3.7% 12% 2% 15% 4.5% 10% 8% 4.5% 18% 18% 6%;
         gap: 1rem;
         text-align: center;
     

@@ -9,7 +9,7 @@
 .contenedor-works{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 6% 20% 5% 26% 26% 26% 7%;
+    grid-template-rows: 5% 15% 5% 26% 26% 26% 7%;
     grid-template-areas: 
     "header""main-cuatro""section-diecisiete""section-dieciocho""section-diecinueve""section-veinte""footer";
     font-size: .7rem;
@@ -25,7 +25,7 @@
         grid-area: section-diecisiete;
         background-color: $color-secundario;
         @include flex;
-        h4{
+        h2{
             color: whitesmoke;
             font-size: 1.3rem;
             font-family: 'Open Sans', sans-serif;
@@ -61,7 +61,7 @@
     .contenedor-works{
         display: grid;
         grid-template-columns: 20% 78.8%;
-        grid-template-rows: 7% 35% 25% 25% 25% 9%;
+        grid-template-rows: 7% 30% 25% 25% 25% 10%;
         grid-template-areas: "header header""main-cuatro main-cuatro""section-diecisiete section-dieciocho""section-diecisiete section-diecinueve""section-diecisiete section-veinte""footer footer";
         font-size: .7rem;
         gap: 1rem;
@@ -70,6 +70,8 @@
         }
         .section-diecisiete{
             background-color: $color-secundario;
+            border-radius: 10px;
+            margin-left: .5rem;
             h4{
                 padding: 2rem;
                 text-align: center;

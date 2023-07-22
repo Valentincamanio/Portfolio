@@ -5,38 +5,92 @@
 @import "../utilidades/mixin";
 
 .contenedor-services{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 15% 6% 28% 28% 28% 8%;
+    grid-template-areas:"header""main-cinco""section-veintiuno""section-tres""section-cuatro""section-cinco""footer";
+    gap: 1rem;
     header{
         @include header;
     }
-
     .main-cinco{
         grid-area: main-cinco;
     }
     .section-veintiuno{
         grid-area: section-veintiuno;
-    }
-    .container-servicios{
-        grid-area: container-servicios;
-        .section-tres{
-            grid-area: section-tres;
-
+        @include flex;
+        background-color: $color-secundario;
+        h2{
+            font-size: 1.5rem;
+            color: $color-principal;
         }
-        .section-cuatro{
-            grid-area: section-cuatro;
-
-        }
-        .section-cinco{
-            grid-area: section-cinco;
-        }        
     }
-
-
-
-
-
-
+    .section-tres{
+        grid-area: section-tres;
+        @extend %carouseles;
+    }
+    .section-cuatro{
+         grid-area: section-cuatro;
+         @extend %carouseles;
+    }
+    .section-cinco{
+        grid-area: section-cinco;
+        @extend %carouseles;
+    }        
     footer{
         grid-area: footer;
         @include footer;
+    }
+}
+
+/* MQ PARA TABLET */
+
+@media screen and (min-width:600px){
+    .contenedor-services{
+        .section-tres{
+            .carousel{
+                margin: 0rem 3rem;
+            }
+        }
+        .section-cuatro{
+            .carousel{
+                margin: 0rem 3rem;
+            }
+        }
+        .section-cinco{
+            .carousel{
+                margin: 0rem 3rem;
+            }
+        }
+    }
+}
+
+/* MQ para desktop */
+
+@media screen and (min-width:1024px){
+    .contenedor-services{
+        display: grid;
+        grid-template-columns: repeat(3, 32.5%);
+        grid-template-rows: 7% 35% 8% 50% 15%;
+        grid-template-areas: "header header header""main-cinco main-cinco main-cinco""section-veintiuno section-veintiuno section-veintiuno""section-tres section-cuatro section-cinco""footer footer footer";
+        header{
+            @include header-desktop;            
+        }
+        .section-tres{
+            .carousel{
+                margin: 0rem;
+            }
+        }
+        .section-cuatro{
+            .carousel{
+                margin: 0rem;
+            }
+        }
+        .section-cinco{
+            .carousel{
+                margin: 0rem;
+            }
+        }
+
     }
 }

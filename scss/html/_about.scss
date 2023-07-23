@@ -10,7 +10,7 @@
 .contenedor-about{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 6% 25% 5% 40% 5% 40% 10%;
+    grid-template-rows: 5% 20% 5% 35% 5% 45% 8%;
     grid-template-areas: 
     "header""main-tres""section-dieciseis-bis""section-dieciseis""section-treintayuno""section-treintaydos""footer";
     font-size: .7rem;
@@ -31,6 +31,7 @@
         background-color: $color-secundario;
         border: .1rem solid black;
         color: $color-principal;
+        @include flex;
     }
     .section-dieciseis{
         grid-area: section-dieciseis;
@@ -53,6 +54,7 @@
         background-color: $color-secundario;
         border: .1rem solid black;
         color: $color-principal;
+        @include flex;
     }
     .section-treintaydos{
         grid-area: section-treintaydos;

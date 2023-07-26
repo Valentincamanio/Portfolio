@@ -4,8 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background: linear-gradient(90deg, #5cb0d1 0%, #010843 100%);
-  font-family: 'Open Sans', sans-serif; }
+  background: linear-gradient(90deg, #5cb0d1 0%, #010843 100%); }
   body main {
     background-image: url(../img/fondo-paisaje.jpg);
     margin: 1rem;
@@ -19,6 +18,20 @@ body {
       text-transform: uppercase;
       text-align: center;
       color: #2B2C32; }
+  body .boton-wsp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: end;
+    margin-right: 2rem;
+    margin-bottom: 2rem; }
+    body .boton-wsp a {
+      font-size: 2rem;
+      color: green; }
+      body .boton-wsp a i {
+        background-color: whitesmoke;
+        border-radius: 50%;
+        padding: .5rem; }
 
 /* home */
 .contenedor .section-dos, .contenedor .section-seis {
@@ -28,7 +41,8 @@ body {
   background-color: #2B2C32; }
   .contenedor .section-dos h3, .contenedor .section-seis h3 {
     font-size: 1.8rem;
-    color: #D9DFE5; }
+    color: #D9DFE5;
+    font-family: 'Russo One', sans-serif; }
 
 .contenedor .section-tres, .contenedor .section-cuatro, .contenedor .section-cinco {
   text-align: center;
@@ -49,7 +63,14 @@ body {
       padding: 1.5rem;
       background-color: #514e4e;
       border-radius: 2rem;
-      border: 0.1rem solid #2B2C32; }
+      border: 0.1rem solid #2B2C32;
+      transition: .2s; }
+    .contenedor .section-tres ul li:hover, .contenedor .section-cuatro ul li:hover, .contenedor .section-cinco ul li:hover {
+      padding: 1.5rem;
+      background-color: #91afda;
+      border-radius: 2rem;
+      border: 0.2rem solid #2B2C32;
+      transition: .2s; }
 
 .contenedor-works .section-dieciocho, .contenedor-works .section-diecinueve, .contenedor-works .section-veinte {
   border: 0.2rem solid #D9DFE5;
@@ -80,11 +101,12 @@ body {
   padding: 0rem 1rem; }
 
 .contenedor {
+  font-family: 'Raleway', sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3.7% 15% 2% 14% 4.5% 11% 11% 11% 4.5% 18% 20% 16% 4%;
   font-size: .7rem;
-  grid-template-areas: "header" "main" "section-dos-bis" "section-dos-tris" "section-dos" "section-tres" "section-cuatro" "section-cinco" "section-seis" "section-siete" "section-ocho" "section-nueve" "footer"; }
+  grid-template-areas: "header" "main" "section-dos-bis" "section-dos-tris" "section-dos" "section-tres" "section-cuatro" "section-cinco" "section-seis" "section-siete" "section-ocho" "section-nueve" "footer"; }
   .contenedor header {
     grid-area: header; }
     .contenedor header .menu-color {
@@ -111,9 +133,10 @@ body {
       display: block; }
   .contenedor .section-dos-bis {
     grid-area: section-dos-bis;
+    font-family: 'Russo One', sans-serif;
     text-align: center;
     color: #D9DFE5;
-    text-decoration: underline; }
+    margin-bottom: 1rem; }
   .contenedor .section-dos-tris {
     grid-area: section-dos-tris;
     color: #D9DFE5;
@@ -248,8 +271,7 @@ body {
           border-bottom: .1rem solid whitesmoke;
           left: 0; }
     .contenedor .section-uno {
-      display: block;
-      margin-left: 2rem; }
+      display: block; }
       .contenedor .section-uno img {
         height: 100%;
         width: 100%;
@@ -289,6 +311,7 @@ body {
 
 /* about */
 .contenedor-about {
+  font-family: 'Raleway', sans-serif;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 5% 20% 5% 35% 5% 45% 8%;
@@ -319,6 +342,7 @@ body {
     display: none; }
   .contenedor-about .section-dieciseis-bis {
     grid-area: section-dieciseis-bis;
+    font-family: 'Russo One', sans-serif;
     background-color: #2B2C32;
     border: .1rem solid black;
     color: #D9DFE5;
@@ -341,6 +365,7 @@ body {
     display: none; }
   .contenedor-about .section-treintayuno {
     grid-area: section-treintayuno;
+    font-family: 'Russo One', sans-serif;
     background-color: #2B2C32;
     border: .1rem solid black;
     color: #D9DFE5;
@@ -464,7 +489,8 @@ body {
   background-color: #2B2C32; }
   .contenedor .section-dos h3, .contenedor .section-seis h3 {
     font-size: 1.8rem;
-    color: #D9DFE5; }
+    color: #D9DFE5;
+    font-family: 'Russo One', sans-serif; }
 
 .contenedor .section-tres, .contenedor .section-cuatro, .contenedor .section-cinco {
   text-align: center;
@@ -485,7 +511,14 @@ body {
       padding: 1.5rem;
       background-color: #514e4e;
       border-radius: 2rem;
-      border: 0.1rem solid #2B2C32; }
+      border: 0.1rem solid #2B2C32;
+      transition: .2s; }
+    .contenedor .section-tres ul li:hover, .contenedor .section-cuatro ul li:hover, .contenedor .section-cinco ul li:hover {
+      padding: 1.5rem;
+      background-color: #91afda;
+      border-radius: 2rem;
+      border: 0.2rem solid #2B2C32;
+      transition: .2s; }
 
 .contenedor-works .section-dieciocho, .contenedor-works .section-diecinueve, .contenedor-works .section-veinte {
   border: 0.2rem solid #D9DFE5;
@@ -516,6 +549,7 @@ body {
   padding: 0rem 1rem; }
 
 .contenedor-contact {
+  font-family: 'Raleway', sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 5% 18% 27% 10% 6% 42.5% 8%;
@@ -549,15 +583,16 @@ body {
     border-radius: 1rem; }
   .contenedor-contact .section-diez {
     grid-area: section-diez;
-    color: whitesmoke;
-    font-size: .9rem; }
+    color: whitesmoke; }
     .contenedor-contact .section-diez .title-consultas {
       background-color: #2B2C32;
+      font-family: 'Russo One', sans-serif;
       padding: .7rem;
       margin-bottom: 1rem;
       text-shadow: none; }
     .contenedor-contact .section-diez div p {
-      margin: 0rem 1rem; }
+      margin: 0rem 1rem;
+      font-size: .9rem; }
   .contenedor-contact .section-once {
     grid-area: section-once;
     display: flex;
@@ -586,7 +621,7 @@ body {
     background-color: #2B2C32;
     color: #D9DFE5; }
     .contenedor-contact .section-doce h3 {
-      font-size: 1.5rem;
+      font-family: 'Russo One', sans-serif;
       border-radius: 2rem;
       padding: .7rem; }
   .contenedor-contact .section-trece {
@@ -656,7 +691,7 @@ body {
   .contenedor-contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5% 22% 23% 8% 6% 45% 8%;
+    grid-template-rows: 5% 22% 20% 5% 6% 45% 8%;
     font-size: .6rem;
     text-align: center;
     gap: .7rem;
@@ -746,6 +781,7 @@ body {
 /* works */
 /* aca va a empezar la personalizacion del works */
 .contenedor-works {
+  font-family: 'Raleway', sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 5% 15% 5% 26% 26% 26% 7%;
@@ -779,8 +815,7 @@ body {
     align-items: center; }
     .contenedor-works .section-diecisiete h2 {
       color: whitesmoke;
-      font-size: 1.3rem;
-      font-family: 'Open Sans', sans-serif; }
+      font-family: 'Russo One', sans-serif; }
   .contenedor-works .section-dieciocho {
     grid-area: section-dieciocho; }
   .contenedor-works .section-diecinueve {
@@ -877,13 +912,15 @@ body {
 
 /* services */
 .contenedor-services {
+  font-family: 'Raleway', sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 5% 15% 6% 28% 28% 28% 8%;
   grid-template-areas: "header" "main-cinco" "section-veintiuno" "section-tres" "section-cuatro" "section-cinco" "footer";
   gap: 1rem; }
   .contenedor-services header {
-    grid-area: header; }
+    grid-area: header;
+    font-size: .7rem; }
     .contenedor-services header .menu-color {
       background-color: #2B2C32;
       text-transform: uppercase; }
@@ -907,8 +944,8 @@ body {
     align-items: center;
     background-color: #2B2C32; }
     .contenedor-services .section-veintiuno h2 {
-      font-size: 1.5rem;
-      color: #D9DFE5; }
+      color: #D9DFE5;
+      font-family: 'Russo One', sans-serif; }
   .contenedor-services .section-tres {
     grid-area: section-tres; }
   .contenedor-services .section-cuatro {
@@ -951,7 +988,7 @@ body {
   .contenedor-services {
     display: grid;
     grid-template-columns: repeat(3, 32.5%);
-    grid-template-rows: 7% 35% 8% 50% 15%;
+    grid-template-rows: 7% 35% 9% 50% 15%;
     grid-template-areas: "header header header" "main-cinco main-cinco main-cinco" "section-veintiuno section-veintiuno section-veintiuno" "section-tres section-cuatro section-cinco" "footer footer footer"; }
     .contenedor-services header {
       grid-area: header; }

@@ -7,11 +7,11 @@
 /* aca va a empezar la personalizacion del works */
 
 .contenedor-works{
+    font-family: 'Raleway', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 5% 15% 5% 26% 26% 26% 7%;
-    grid-template-areas: 
-    "header""main-cuatro""section-diecisiete""section-dieciocho""section-diecinueve""section-veinte""footer";
+    grid-template-areas: "header""main-cuatro""section-diecisiete""section-dieciocho""section-diecinueve""section-veinte""footer";
     font-size: .7rem;
     gap: .8rem;
     text-align: center;
@@ -27,8 +27,7 @@
         @include flex;
         h2{
             color: whitesmoke;
-            font-size: 1.3rem;
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Russo One', sans-serif;
         }
     }
     .section-dieciocho{

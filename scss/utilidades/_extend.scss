@@ -13,6 +13,7 @@
     h3{
         font-size: 1.8rem;
         color: $color-principal;
+        font-family: 'Russo One', sans-serif;
     }
 }
 
@@ -23,7 +24,7 @@
     flex-direction: column;
     font-size: .8rem;
     h4{
-        font-size: 1rem;   
+        font-size: 1rem;
     } 
     ul{
         list-style: none;
@@ -36,7 +37,15 @@
             padding: 1.5rem;
             background-color: rgb(81, 78, 78);
             border-radius: 2rem;
-            border: .1rem solid $color-secundario;   
+            border: .1rem solid $color-secundario;  
+            transition: .2s; 
+        }
+        li:hover{
+            padding: 1.5rem;
+            background-color: #91afda;
+            border-radius: 2rem;
+            border: .2rem solid $color-secundario; 
+            transition: .2s;
         }
     }  
 }

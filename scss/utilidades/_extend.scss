@@ -77,10 +77,14 @@
 }
 
 %carouseles{
+    background-color: grey;
+    margin: 1rem;
+    border-radius: 3px;
+    border: 2px solid black;
     h4{
         text-align: center;
         color: $color-principal;
-        margin-bottom: .9rem;
+        margin-bottom: 1.2rem;
     }
     .carousel{
         padding: 0rem 1rem;

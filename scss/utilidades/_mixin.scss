@@ -22,11 +22,15 @@
     .menu-color{
         background-color: $color-secundario;
         text-transform: uppercase;
+        padding: .7rem;
+        font-family: 'Raleway', sans-serif;
         .container-fluid{
             .navbar-toggler{
                 border: 0px;
+                margin: 0rem 1.4rem;
                 .navbar-toggler-icon{
-                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(93, 173, 226)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(93, 173, 226)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                    margin: 0rem;
                 }
             }
         }
@@ -34,11 +38,14 @@
             .color-letras{
                 color: $color-principal;
                 text-align: center;
+                font-family: 'Raleway', sans-serif;
+                transition: .5s;
             }
             .color-letras:hover{
-                color: rgb(119, 7, 7);
+                color: rgb(93, 173, 226);
                 position: relative;
                 left: 2rem;
+                transition: .5s;
             }
         }
     }
@@ -53,6 +60,7 @@
             .color-letras{
                 display: flex;
                 text-decoration: solid;
+                margin: 0rem 1rem;
             }
             .color-letras:hover{
                 color: whitesmoke;
@@ -81,7 +89,7 @@
     color: $color-principal;
     div{
         h6{
-            font-size: 1rem; 
+            font-size: .6rem; 
         }
     }
     .redes a{

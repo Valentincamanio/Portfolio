@@ -10,8 +10,8 @@
 .contenedor-about{
     font-family: 'Raleway', sans-serif;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 5% 20% 5% 35% 5% 45% 8%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6% 20% 5% 35% 5% 45% 8%;
     grid-template-areas: 
     "header""main-tres""section-dieciseis-bis""section-dieciseis""section-treintayuno""section-treintaydos""footer";
     font-size: .7rem;
@@ -77,83 +77,4 @@
         @include footer;
     }
 
-}
-/* MQ PARA TABLET */
-@media screen and (min-width:600px){
-    .contenedor-about{
-        display: grid;
-        grid-template-columns: 43% 56.8%;
-        grid-template-rows: 4% 18% 4% 44% 4% 45% 7%;
-        grid-template-areas: "header header""main-tres main-tres""section-dieciseis-bis section-dieciseis-bis""section-quince section-dieciseis""section-treintayuno section-treintayuno""section-treinta section-treintaydos""footer footer";
-        font-size: .8rem;
-        text-align: center;
-        .section-quince{
-            display: block;
-            width: auto;
-            padding: 1rem;
-            img{
-                height: 100%;
-                width: 100%;
-            }
-        }
-        .section-treinta{
-            display: block;
-            padding: 1rem;
-            img{
-                height: 100%;
-                width: 100%;
-                margin-left: 1rem;
-            }
-        }
-    }
-}
-/* MQ para desktop */
-@media screen and (min-width:1024px){
-    .contenedor-about{
-        display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 4.5% 15% 4% 40% 4% 40% 6%;
-        grid-template-areas: "header header""main-tres main-tres""section-dieciseis-bis section-dieciseis-bis""section-quince section-dieciseis""section-treintayuno section-treintayuno""section-treinta section-treintaydos""footer footer";
-        font-size: .7rem;
-        text-align: center;
-        color: whitesmoke;
-        header{
-            @include header-desktop;
-        }
-        .section-quince{
-            display: block;
-            width: auto;
-            padding: 1rem;
-            img{
-                height: 100%;
-                width: 100%;
-            }
-        }
-        .section-dieciseis-bis{
-            border-radius: 1em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $color-secundario;
-            h2{
-                font-size: 1.5rem;
-                color: $color-principal;
-                text-transform: uppercase;
-                display: flex;
-                align-items: center;
-            }
-        }
-        .section-treinta{
-            display: block;
-            padding: 2rem;
-            img{
-                height: 100%;
-                width: 100%;
-                margin-right: 1rem;
-            }
-        }
-       .section-treintaydos{
-        box-shadow: 2rem solid black;
-       }
-    }
 }

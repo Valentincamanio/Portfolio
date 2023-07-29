@@ -18,13 +18,19 @@
 }
 
 %services{
+    background-color: #91AFDA;
+    border-radius: 1rem;
+    border: 2px solid white;
     text-align: center;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     font-size: .8rem;
+    justify-content: center;
+    margin: 1rem;
     h4{
         font-size: 1rem;
+        font-family: 'Russo One', sans-serif;
     } 
     ul{
         list-style: none;
@@ -39,6 +45,7 @@
             border-radius: 2rem;
             border: .1rem solid $color-secundario;  
             transition: .2s; 
+            color: white;
         }
         li:hover{
             padding: 1.5rem;
@@ -54,15 +61,15 @@
     border: .2rem solid $color-principal;
     border-radius: 1rem;
     padding: 1rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin: 1rem;
     color: $color-secundario;
     background-color: #91afda;
     font-size: .8rem;
     img{
-        height: 6rem;
-        width: 10rem;
+
+        width: 70%;
         border: .2rem solid $color-secundario;
+        border-radius: 5px;
         margin-bottom: .6rem;
     }
     div{
@@ -77,16 +84,19 @@
 }
 
 %carouseles{
-    background-color: grey;
+    background-color: #91AFDA;
     margin: 1rem;
-    border-radius: 3px;
-    border: 2px solid black;
+    border-radius: 1rem;
+    border: 2px solid whitesmoke;
     h4{
         text-align: center;
-        color: $color-principal;
+        color: black;
         margin-bottom: 1.2rem;
+        font-family: 'Russo One', sans-serif;
+        margin-top: 1.5rem;
     }
     .carousel{
         padding: 0rem 1rem;
+        border-radius: 1rem;
     }
 }

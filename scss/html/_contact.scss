@@ -9,7 +9,7 @@
     font-family: 'Raleway', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5% 18% 27% 10% 6% 44.5% 6%;
+    grid-template-rows: 4% 15% 29% 12% 6% 44.5% 6%;
     font-size: .7rem;
     text-align: center;
     gap: .5rem;
@@ -78,7 +78,7 @@
         color: whitesmoke;
         margin: 1rem;
         border-radius: 5px;
-        background-color: rgb(199, 199, 199);
+        background-color: #91AFDA;
         form{
             fieldset{
                 legend{
@@ -95,6 +95,9 @@
                     justify-content: center;
                     flex-direction: column;
                     font-size: 1rem;
+                    .input-nombre{
+                        margin-top: 2rem;
+                    }
                     input{
                         margin: 0rem 1rem;
                         padding: 1rem;

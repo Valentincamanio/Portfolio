@@ -13,16 +13,16 @@
 body{
     background: linear-gradient(90deg, hsl(197, 56%, 59%) 0%, #010843 100%);
     main{
-        background-image: url(../img/fondo-paisaje.jpg);
+        background-image: url(../img/espacio-fondo.jpg);
         margin: 1rem;
         border-radius: 1rem;
-        border: .1rem solid $color-secundario;
+        border: .2rem solid #91AFDA;
         @include flex;
         h1{
             font-size: 2.2em;
             text-transform: uppercase;
             text-align: center;
-            color: $color-secundario;
+            color: $color-principal;
         }
     } 
     .boton-wsp{
@@ -59,7 +59,7 @@ body{
     .contenedor{
         display: grid;
         grid-template-columns: repeat(2, 49%);
-        grid-template-rows: 3.7% 12% 3% 20% 4.5% 12% 12% 4.5% 18% 18% 6%;
+        grid-template-rows: 3.7% 17% 3% 20% 4.5% 12% 12% 4.5% 18% 18% 6%;
         gap: 1rem;
         text-align: center;
     
@@ -134,7 +134,7 @@ body{
     .contenedor-contact{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 4% 20% 25% 8% 6% 45% 8%;
+        grid-template-rows: 4% 20% 25% 8% 6% 50% 8%;
         font-size: .6rem;
         text-align: center;
         gap: .7rem;

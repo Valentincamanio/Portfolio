@@ -19,7 +19,6 @@
     }
     .main-dos{
         grid-area: main-dos;
-        @include main;
     }
     .section-diez{
         grid-area: section-diez;
@@ -69,6 +68,7 @@
             font-family: 'Russo One', sans-serif;
             border-radius: 2rem;
             padding: .7rem;
+            transition: .75s;
         }
 
     }

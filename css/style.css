@@ -38,7 +38,8 @@
       color: white; }
     .contenedor .section-tres ul li:hover, .contenedor .section-cuatro ul li:hover, .contenedor .section-cinco ul li:hover {
       padding: 1.5rem;
-      background-color: #91afda;
+      background-color: white;
+      color: black;
       border-radius: 2rem;
       border: 0.2rem solid #2B2C32;
       transition: .2s; }
@@ -50,14 +51,14 @@
   margin: 1rem;
   color: #2B2C32;
   background-color: #91afda;
-  font-size: .8rem; }
+  font-size: 1rem; }
   .contenedor-works .section-dieciocho img, .contenedor-works .section-diecinueve img, .contenedor-works .section-veinte img {
     width: 70%;
     border: 0.2rem solid #2B2C32;
     border-radius: 5px;
     margin-bottom: .6rem; }
   .contenedor-works .section-dieciocho div h3, .contenedor-works .section-diecinueve div h3, .contenedor-works .section-veinte div h3 {
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   .contenedor-works .section-dieciocho div ul, .contenedor-works .section-diecinueve div ul, .contenedor-works .section-veinte div ul {
     text-align: start;
     margin: 0; }
@@ -85,10 +86,10 @@
 body {
   background: linear-gradient(90deg, #5cb0d1 0%, #010843 100%); }
   body main {
-    background-image: url(../img/fondo-paisaje.jpg);
+    background-image: url(../img/espacio-fondo.jpg);
     margin: 1rem;
     border-radius: 1rem;
-    border: 0.1rem solid #2B2C32;
+    border: .2rem solid #91AFDA;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -96,7 +97,7 @@ body {
       font-size: 2.2em;
       text-transform: uppercase;
       text-align: center;
-      color: #2B2C32; }
+      color: #D9DFE5; }
   body .boton-wsp {
     display: flex;
     justify-content: center;
@@ -154,7 +155,8 @@ body {
       color: white; }
     .contenedor .section-tres ul li:hover, .contenedor .section-cuatro ul li:hover, .contenedor .section-cinco ul li:hover {
       padding: 1.5rem;
-      background-color: #91afda;
+      background-color: white;
+      color: black;
       border-radius: 2rem;
       border: 0.2rem solid #2B2C32;
       transition: .2s; }
@@ -166,14 +168,14 @@ body {
   margin: 1rem;
   color: #2B2C32;
   background-color: #91afda;
-  font-size: .8rem; }
+  font-size: 1rem; }
   .contenedor-works .section-dieciocho img, .contenedor-works .section-diecinueve img, .contenedor-works .section-veinte img {
     width: 70%;
     border: 0.2rem solid #2B2C32;
     border-radius: 5px;
     margin-bottom: .6rem; }
   .contenedor-works .section-dieciocho div h3, .contenedor-works .section-diecinueve div h3, .contenedor-works .section-veinte div h3 {
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   .contenedor-works .section-dieciocho div ul, .contenedor-works .section-diecinueve div ul, .contenedor-works .section-veinte div ul {
     text-align: start;
     margin: 0; }
@@ -318,7 +320,7 @@ body {
   font-family: 'Raleway', sans-serif;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 6% 20% 5% 35% 5% 45% 8%;
+  grid-template-rows: 6% 20% 5% 40% 5% 50% 8%;
   grid-template-areas: "header" "main-tres" "section-dieciseis-bis" "section-dieciseis" "section-treintayuno" "section-treintaydos" "footer";
   font-size: .7rem;
   text-align: center;
@@ -458,7 +460,8 @@ body {
       color: white; }
     .contenedor .section-tres ul li:hover, .contenedor .section-cuatro ul li:hover, .contenedor .section-cinco ul li:hover {
       padding: 1.5rem;
-      background-color: #91afda;
+      background-color: white;
+      color: black;
       border-radius: 2rem;
       border: 0.2rem solid #2B2C32;
       transition: .2s; }
@@ -470,14 +473,14 @@ body {
   margin: 1rem;
   color: #2B2C32;
   background-color: #91afda;
-  font-size: .8rem; }
+  font-size: 1rem; }
   .contenedor-works .section-dieciocho img, .contenedor-works .section-diecinueve img, .contenedor-works .section-veinte img {
     width: 70%;
     border: 0.2rem solid #2B2C32;
     border-radius: 5px;
     margin-bottom: .6rem; }
   .contenedor-works .section-dieciocho div h3, .contenedor-works .section-diecinueve div h3, .contenedor-works .section-veinte div h3 {
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   .contenedor-works .section-dieciocho div ul, .contenedor-works .section-diecinueve div ul, .contenedor-works .section-veinte div ul {
     text-align: start;
     margin: 0; }
@@ -530,13 +533,7 @@ body {
         left: 2rem;
         transition: .5s; }
   .contenedor-contact .main-dos {
-    grid-area: main-dos;
-    border: 0.1rem solid #2B2C32;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
-    border-radius: 1rem; }
+    grid-area: main-dos; }
   .contenedor-contact .section-diez {
     grid-area: section-diez;
     color: whitesmoke; }
@@ -579,7 +576,8 @@ body {
     .contenedor-contact .section-doce h3 {
       font-family: 'Russo One', sans-serif;
       border-radius: 2rem;
-      padding: .7rem; }
+      padding: .7rem;
+      transition: .75s; }
   .contenedor-contact .section-trece {
     grid-area: section-trece;
     border: .1rem solid black;
@@ -794,7 +792,7 @@ body {
   .contenedor {
     display: grid;
     grid-template-columns: repeat(2, 49%);
-    grid-template-rows: 3.7% 12% 3% 20% 4.5% 12% 12% 4.5% 18% 18% 6%;
+    grid-template-rows: 3.7% 17% 3% 20% 4.5% 12% 12% 4.5% 18% 18% 6%;
     gap: 1rem;
     text-align: center;
     grid-template-areas: "header header" "main main" "section-dos-bis section-dos-bis" "section-dos-tris section-dos-tris" "section-dos section-dos" "section-tres section-cuatro" "section-cinco section-cinco" "section-seis section-seis" "section-siete section-ocho" "section-nueve section-nueve" "footer footer"; }
@@ -854,7 +852,7 @@ body {
   .contenedor-contact {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 4% 20% 25% 8% 6% 45% 8%;
+    grid-template-rows: 4% 20% 25% 8% 6% 50% 8%;
     font-size: .6rem;
     text-align: center;
     gap: .7rem;
